@@ -176,3 +176,42 @@ body {
 
     }
 }
+
+
+// titles
+
+
+.primary-title {
+
+  display: flex;
+  z-index: 1;
+  align-items: flex-start;
+  position: relative;
+
+  &__h {
+    font-weight: bold;
+    font-size: 3em;
+    position: relative;
+
+
+      &:before {
+        background: lighten($primary-color, 60%);
+        bottom: 5px;
+        content: "";
+        height: 20px;
+        left: -5px;
+        padding: 0 20px 0 5px;
+        position: absolute;
+        width: 100%;
+        z-index: -2;
+      }
+
+
+          &--header {
+            &:before {
+              background: darken($primary-color, 10%);
+            }
+          }
+  }
+
+}

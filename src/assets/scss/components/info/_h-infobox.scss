@@ -12,9 +12,9 @@
   }
 
   &__iconbox {
-    width: 3em;
-    height: 3em;
-    border: 2px solid lighten($primary-color, 50%);;
+    // width: 3em;
+    // height: 3em;
+    // border: 2px solid lighten($primary-color, 50%);;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@
   }
 
   &__icon {
-    font-size: 1.2em;
+    font-size: 2em;
     color: lighten($primary-color, 50%);
   }
 
