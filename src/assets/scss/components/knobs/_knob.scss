@@ -1,61 +1,65 @@
 .knob {
-      @include button(false, $primary-color, $secondary-color);
-      margin: 0;
-      padding: 1em 3em;
-      border-radius: 50px;
+  @include button(false, $primary-color, $secondary-color);
+  margin: 0;
+  padding: 1em 3em;
+  border-radius: 5px;
+
+  &--full {
+    width: 100%;
+  }
 
 
-      &__inner {
-            display: flex;
-      }
+  &__inner {
+    display: flex;
+  }
 
-      &__icon {
-            display: inline-block;
-            width: 1rem;
-            height: 1rem;
-            stroke-width: 0;
-            stroke: currentColor;
-            fill: $white;
-            line-height: 0;
-            margin-right: 0.5rem;
-      }
+  &__icon {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: $white;
+    line-height: 0;
+    margin-right: 0.5rem;
+  }
 }
 
 
 .knob-group {
-      @include button-group(a, 1em);
+  @include button-group(a, 1em);
 
-      a  {
-            padding: 1em 3em;
-      }
+  a  {
+    padding: 1em 3em;
+  }
 }
 
 
 .filters-knob-group {
-      @include button-group(a, 1em);
+  @include button-group(a, 1em);
 
-      a  {
-            background: $light-gray;
-            color: $black;
+  a  {
+    background: $light-gray;
+    color: $black;
 
-            &:hover {
-                  color: $black;
-                  background: $medium-gray;
-            }
-      }
+    &:hover {
+      color: $black;
+      background: $medium-gray;
+    }
+  }
 }
 
 
 
 .knob-link {
-      font-size: 1em;
-      color: $black;
-      display: flex;
+  font-size: 1em;
+  color: $black;
+  display: flex;
 
-      &:after {
-            content: "\ea34";
-            font-family: 'icomoon' !important;
-            margin-left: 0.8em;
-      }
+  &:after {
+    content: "\ea34";
+    font-family: 'icomoon' !important;
+    margin-left: 0.8em;
+  }
 
 }

@@ -1,0 +1,101 @@
+
+
+<section class="main-screen">
+  {{> flatnav-rvl}}
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="medium-6 cell">
+        <div class="main-screen__left">
+          <div class="main-screen__wellcome">
+            <h1>Нам не поебать! Но это не точно.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse officia doloribus explicabo autem voluptas eveniet laudantium possimus expedita sit error.</p>
+            {{> infobox type= 'h-infobox'}}
+          </div>
+        </div>
+      </div>
+      <div class="medium-6 cell">
+        <div class="main-screen__right">
+          <div class="main-screen__wellcome">
+            {{> appointment-form}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{> departament}}
+
+<section class="doctors-area">
+  <div class="grid-container">
+    <div class="grid-x">
+      {{> doctor-card}}
+      {{> doctor-card}}
+      {{> doctor-card}}
+      {{> doctor-card}}
+      {{> doctor-card}}
+      {{> doctor-card}}
+    </div>
+    <div class="" id="all-docs" data-toggler=".show">
+      <div class="grid-x">
+        {{> doctor-card}}
+        {{> doctor-card}}
+        {{> doctor-card}}
+        {{> doctor-card}}
+        {{> doctor-card}}
+        {{> doctor-card}}
+      </div>
+    </div>
+    <div class="medium-12 cell">
+      <a data-toggle="all-docs">Все докторишки</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="galium-map">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3925c26b17a74138c2e82bcba4e9da16ed98ccdd8aae7edcd03de9e364f4c112&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+</section>
+
+
+  <div class="grid-container">
+    <section class="getintouch__area">
+      <div class="grid-x">
+        <div class="medium-4 cell">
+          <h3>Контакты:</h3>
+          <div class="getintouch">
+            <ul class="getintouch__list">
+              <li class="getintouch__item">Телефон: 72-22-57</li>
+              <li class="getintouch__item">Адрес: Интернациональная 27б</li>
+              <li class="getintouch__item">Email: galium@inbox.ru</li>
+            </ul>
+          </div>
+        </div>
+        <div class="medium-8 cell">
+          <form class="getintouch__form" action="">
+            <div class="grid-x grid-margin-x">
+              <div class="medium-6 cell">
+                <input type="text" placeholder="Как вас зовут">
+              </div>
+              <div class="medium-6 cell">
+                <input type="text" placeholder="Email">
+              </div>
+              <div class="medium-12 cell">
+                <div class="getintouch__textarea-inner">
+                  <textarea class="getintouch__textarea" name="name" placeholder="Сообщение"></textarea>
+                  <a class="knob knob--textarea" href="#">Отправить</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+<footer class="flat-footer">
+  <div class="grid-container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, veniam, in. Esse, molestias consequatur provident officia? Assumenda commodi, eos eius!</p>
+  </div>
+</footer>

@@ -1,0 +1,60 @@
+.departament {
+
+&__card {
+  background: $white;
+  padding: 2em;
+  box-shadow: 0 2px 10px rgba(25, 30, 30, 0.1);
+  cursor: default;
+  margin: 1em;
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(25, 30, 30, 0.2);
+  }
+}
+
+&__title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+  &__iconbox {
+    border: 3px solid $primary-color;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    height: 5em;
+  }
+
+  &__icon {
+    font-size: 2em;
+    color: $primary-color;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    line-height: 3em;
+    border-bottom: 1px solid $light-gray;
+
+    &::before {
+      font-family: 'icomoon';
+      content: "\e9dc";
+      padding-right: .5em;
+    }
+
+  }
+
+  &__footer {
+    display: flex;
+  }
+
+  &__link {
+    margin-right: 1em;
+  }
+}

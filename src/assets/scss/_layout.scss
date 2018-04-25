@@ -28,10 +28,151 @@ body {
       }
 }
 
+.departament-area {
+  background: $light-gray;
+  padding: 4em 0;
+}
+
+.doctors-area {
+  background: $light-gray;
+  padding: 4em 0;
+}
 
 
-.test-header {
-  border-bottom: 1px solid $black;
-  z-index: 9999;
-  background: transparent;
+.flat-footer {
+  background: $black;
+  color: $white;
+  padding: 20em 0 4em 0;
+  height: 400px;
+  z-index: 0;
+}
+
+.galium-map {
+    z-index: -2;
+}
+
+
+.main-screen {
+  position: relative;
+    // background: url('../img/screen-shape.png')  no-repeat top center, linear-gradient(to bottom, $primary-color, lighten($primary-color,
+  background: url('../img/screen-shape.png')  no-repeat top center;
+  background-color: $primary-color;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+
+  &__left {
+    height: calc(100vh - 90px);
+    color: $white;
+    display: flex;
+    align-items: center;
+    color: $white;
+  }
+
+  &__right {
+    height: calc(100vh - 90px);;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+// appointment form
+
+.appointment-form {
+
+  &__area {
+    background: $white;
+    padding: 4em 3em;
+    box-shadow: 0 2px 10px rgba($black, 0.2);
+  }
+
+  &__textarea {
+    height: 138px !important;
+  }
+
+}
+
+
+// get in touch
+
+.getintouch {
+
+  &__area {
+    position: relative;
+    background: $light-gray;
+    margin-top: -200px;
+    margin-bottom: -200px;
+    padding: 4em;
+    height: 400px;
+    z-index: 9999;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__textarea-inner {
+    position: relative;
+  }
+
+  &__textarea {
+    height: 140px !important;
+  }
+
+}
+
+.knob--textarea {
+  margin-top: 1em;
+  border-top-right-radius: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.btn {
+  background: linear-gradient(to left, $secondary-color, darken($secondary-color, 10%));
+  color: $white;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+
+  &:hover {
+    background: $white;
+    color: $secondary-color;
+    border: 2px solid $secondary-color;
+    transition: linear .3s;
+  }
+
+  &:hover .btn__iconbox {
+    background: linear-gradient(to left, $secondary-color, darken($secondary-color, 10%));
+    color: $white;
+    transition: linear .3s;
+  }
+
+    &__iconbox {
+      width: 3em;
+      height: 3em;
+      background: $white;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1em;
+      color: $black;
+    }
+
+    &__icon {
+
+    }
 }

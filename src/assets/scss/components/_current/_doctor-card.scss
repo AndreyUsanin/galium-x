@@ -1,0 +1,46 @@
+.doctor-card {
+
+
+  &__inner {
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 2em;
+    margin: 1em;
+  }
+
+  &__profile {
+    display: flex;
+  }
+
+  &__img {
+    border-radius: 100%;
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  &__infobox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  &__footer {
+    padding-top: 1em;
+  }
+}
+
+#all-docs {
+  display: none;
+
+}
+
+#all-docs.show {
+    display: block;
+  }

@@ -29,7 +29,7 @@ $flatnav-rvl-height: 90px;
     &__nav {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       min-height: $flatnav-rvl-height;
     }
 
@@ -43,10 +43,10 @@ $flatnav-rvl-height: 90px;
   &__link {
     padding: 2rem;
     display: flex;
-    color: $black;
+    color: $white;
 
     &:hover, &:active, &:focus  {
-      color: $black;
+      color: $white;
     }
 
     @include breakpoint(small down) {
