@@ -11,9 +11,11 @@
   "license": "MIT",
   "dependencies": {
     "air-datepicker": "^2.2.3",
+    "clockpicker": "0.0.7",
     "foundation-sites": "~6.4.1",
     "isotope-layout": "^3.0.5",
     "jquery": ">=3.0.0",
+    "jquery-nice-select": "^1.1.0",
     "jquery-parallax.js": "^1.5.0",
     "lightcase": "^2.5.0",
     "motion-ui": "~1.2.2",

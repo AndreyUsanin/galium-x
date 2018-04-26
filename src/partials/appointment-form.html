@@ -1,5 +1,5 @@
 <div class="appointment-form__area">
-  <h2>Запись на прием:</h2>
+  <h2 class="appointment-form__title">Запись на прием:</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus excepturi nemo accusamus voluptate quam esse quisquam velit soluta, quia laborum.</p>
   <form class="appointment-form" action="">
     <div class="grid-x grid-margin-x">
@@ -12,10 +12,10 @@
         </select>
       </div>
       <div class="medium-6 cell">
-        <input type="text" placeholder="Дата">
+        <input type="text" class="appointment-form__date" placeholder="Дата">
       </div>
       <div class="medium-6 cell">
-        <select>
+        <select class="select">
           <option value="husker">Белоусова</option>
           <option value="starbuck">Хазов</option>
           <option value="hotdog">Яковлев</option>
@@ -23,7 +23,9 @@
         </select>
       </div>
       <div class="medium-6 cell">
-        <input type="text" placeholder="Время">
+        <div>
+          <input  class="clockpicker" type="text" class="" value="09:30">
+        </div>
       </div>
       <div class="medium-6 cell">
         <input type="text" placeholder="Полное имя">
@@ -33,11 +35,10 @@
         <textarea class="appointment-form__textarea"  name="name" rows="4" cols="40"  placeholder="Информация для врача"></textarea>
       </div>
       <div class="medium-12 cell">
-        <a class="btn" href="#">Записаться на прием
-          <div class="btn__iconbox">
-            <span class="btn__icon icon-forward"></span>
-          </div>
-        </a>
+        <a class="knb" href="#">
+
+            <span class="knb__icon icon-write"></span>
+Записаться на прием</a>
       </div>
     </div>
   </form>

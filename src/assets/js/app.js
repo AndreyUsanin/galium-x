@@ -6,10 +6,12 @@ window.$ = $;
 
 
 var datepicker = require('../../../node_modules/air-datepicker/dist/js/datepicker.js');
+var clockpicker = require('../../../node_modules/clockpicker/dist/jquery-clockpicker.js');
 var parallax = require('../../../node_modules/jquery-parallax.js/parallax.js');
 var lightcase = require('../../../node_modules/lightcase/src/js/lightcase.js');
 var isotope = require('../../../node_modules/isotope-layout/dist/isotope.pkgd.js');
-var waypoint = require('../../../node_modules//waypoints/lib/jquery.waypoints.js');
+var waypoint = require('../../../node_modules/waypoints/lib/jquery.waypoints.js');
+var niceSelect = require('../../../node_modules/jquery-nice-select/js/jquery.nice-select.js');
 
 
 // VENDORS FOLDER
@@ -27,12 +29,24 @@ import Foundation from 'foundation-sites';
 import slick from 'slick-carousel';
 
 
+// nice select
+
+$(document).ready(function() {
+  $('select').niceSelect();
+});
+
+// clockpicker
+
+$('.clockpicker').clockpicker({
+	autoclose: true
+});
 // particlesJS
 
 var particles = document.getElementById('particles-js');
 if (particles) {
 var particlesJS = require('./vendors/particles.js');
 var particlesJS = window.particlesJS;
+
 
 /* ---- particles.js config ---- */
 
@@ -357,47 +371,48 @@ $('.sld').slick({
 	//
 	var disabledDays = [0, 6];
 
-	$('.form__date').datepicker({
-	      autoClose: true,
-	    onRenderCell: function (date, cellType) {
-	        if (cellType == 'day') {
-	            var day = date.getDay(),
-	                isDisabled = disabledDays.indexOf(day) != -1;
+	$('.appointment-form__date').datepicker({
+		autoClose: true,
+		minDate: new Date(),
+		onRenderCell: function (date, cellType) {
+			if (cellType == 'day') {
+				var day = date.getDay(),
+				isDisabled = disabledDays.indexOf(day) != -1;
 
-	            return {
-	                disabled: isDisabled
-	            }
-	        }
-	    }
+				return {
+					disabled: isDisabled
+				}
+			}
+		}
 	})
-
-	$('.iconform__date').datepicker({
-	      autoClose: true,
-	    onRenderCell: function (date, cellType) {
-	        if (cellType == 'day') {
-	            var day = date.getDay(),
-	                isDisabled = disabledDays.indexOf(day) != -1;
-
-	            return {
-	                disabled: isDisabled
-	            }
-	        }
-	    }
-	})
-
-	$('.h-iconform__date').datepicker({
-	      autoClose: true,
-	    onRenderCell: function (date, cellType) {
-	        if (cellType == 'day') {
-	            var day = date.getDay(),
-	                isDisabled = disabledDays.indexOf(day) != -1;
-
-	            return {
-	                disabled: isDisabled
-	            }
-	        }
-	    }
-	})
+	//
+	// $('.iconform__date').datepicker({
+	//       autoClose: true,
+	//     onRenderCell: function (date, cellType) {
+	//         if (cellType == 'day') {
+	//             var day = date.getDay(),
+	//                 isDisabled = disabledDays.indexOf(day) != -1;
+	//
+	//             return {
+	//                 disabled: isDisabled
+	//             }
+	//         }
+	//     }
+	// })
+	//
+	// $('.h-iconform__date').datepicker({
+	//       autoClose: true,
+	//     onRenderCell: function (date, cellType) {
+	//         if (cellType == 'day') {
+	//             var day = date.getDay(),
+	//                 isDisabled = disabledDays.indexOf(day) != -1;
+	//
+	//             return {
+	//                 disabled: isDisabled
+	//             }
+	//         }
+	//     }
+	// })
 
 
 

@@ -1,0 +1,47 @@
+// get in touch
+
+.getintouch {
+
+  position: relative;
+  background: $white;
+  margin-top: -200px;
+  margin-bottom: -200px;
+  z-index: 9999;
+
+  &__contacts {
+    background: $light-gray;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 4em;
+  }
+
+  &__form {
+    padding: 4em;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    padding: 1em 0;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__textarea-inner {
+    position: relative;
+  }
+
+  &__textarea {
+    height: 140px !important;
+  }
+
+}

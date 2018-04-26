@@ -1,7 +1,6 @@
 $section-margin: 5em;
 
 
-
 body {
   height: 100%;
 
@@ -76,7 +75,6 @@ body {
   }
 }
 
-
 // appointment form
 
 .appointment-form {
@@ -87,6 +85,10 @@ body {
     box-shadow: 0 2px 10px rgba($black, 0.2);
   }
 
+  &__title {
+    font-weight: bold;
+  }
+
   &__textarea {
     height: 138px !important;
   }
@@ -94,37 +96,8 @@ body {
 }
 
 
-// get in touch
 
-.getintouch {
-
-  &__area {
-    position: relative;
-    background: $light-gray;
-    margin-top: -200px;
-    margin-bottom: -200px;
-    padding: 4em;
-    height: 400px;
-    z-index: 9999;
-  }
-
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  &__textarea-inner {
-    position: relative;
-  }
-
-  &__textarea {
-    height: 140px !important;
-  }
-
-}
-
-.knob--textarea {
+.knb--textarea {
   margin-top: 1em;
   border-top-right-radius: 0;
   position: absolute;
@@ -133,11 +106,12 @@ body {
   display: block;
 }
 
-.btn {
+
+.knb {
   background: linear-gradient(to left, $secondary-color, darken($secondary-color, 10%));
   color: $white;
   border: 2px solid transparent;
-  border-radius: 100px;
+  border-radius: $global-radius;
   padding: 1em;
   font-weight: bold;
   font-size: 1em;
@@ -147,6 +121,16 @@ body {
   justify-content: center;
   flex: 0 0 auto;
 
+
+  &--textarea {
+    margin-top: 1em;
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+
   &:hover {
     background: $white;
     color: $secondary-color;
@@ -154,64 +138,12 @@ body {
     transition: linear .3s;
   }
 
-  &:hover .btn__iconbox {
-    background: linear-gradient(to left, $secondary-color, darken($secondary-color, 10%));
-    color: $white;
+  &:hover .knb__icon {
+    color: $secondary-color;
     transition: linear .3s;
   }
 
-    &__iconbox {
-      width: 3em;
-      height: 3em;
-      background: $white;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 1em;
-      color: $black;
-    }
-
     &__icon {
-
+      margin-right: .5em;
     }
-}
-
-
-// titles
-
-
-.primary-title {
-
-  display: flex;
-  z-index: 1;
-  align-items: flex-start;
-  position: relative;
-
-  &__h {
-    font-weight: bold;
-    font-size: 3em;
-    position: relative;
-
-
-      &:before {
-        background: lighten($primary-color, 60%);
-        bottom: 5px;
-        content: "";
-        height: 20px;
-        left: -5px;
-        padding: 0 20px 0 5px;
-        position: absolute;
-        width: 100%;
-        z-index: -2;
-      }
-
-
-          &--header {
-            &:before {
-              background: darken($primary-color, 10%);
-            }
-          }
-  }
-
 }
