@@ -29,11 +29,122 @@ import Foundation from 'foundation-sites';
 import slick from 'slick-carousel';
 
 
-// nice select
+// test2
+$(document).ready(function(){
 
-$(document).ready(function() {
-  $('select').niceSelect();
+//let's create arrays
+var uzi = [
+    {display: "Белоусова", value: "Белоусова" },
+    {display: "Каверина", value: "Каверина" }];
+
+var cardiolog = [
+    {display: "Темарцев", value: "Темарцев" },
+    {display: "Растрыгина", value: "Растрыгина" }];
+
+var terapevt = [
+    {display: "Арсеньева", value: "Арсеньева" }];
+
+//If parent option is changed
+$("#parent_selection").change(function() {
+        var parent = $(this).val(); //get option value from parent
+
+        switch(parent){ //using switch compare selected option and populate child
+              case 'uzi':
+                list(uzi);
+                break;
+              case 'cardiolog':
+                list(cardiolog);
+                break;
+              case 'terapevt':
+                list(terapevt);
+                break;
+            default: //default child option is blank
+                $("#child_selection").html('');
+                break;
+           }
 });
+
+//function to populate child select box
+function list(array_list)
+{
+    $("#child_selection").html(""); //reset child options
+    $(array_list).each(function (i) { //populate child options
+        $("#child_selection").append("<option value=" +array_list[i].value+">"+array_list[i].display+"</option>");
+    });
+}
+
+});
+
+// test
+//
+//
+// jQuery(document).ready(function($){
+//
+//     var $cat = $("#category1"),
+//         $subcat = $(".subcat");
+//
+//     var optgroups = {};
+//
+//     $subcat.each(function(i,v){
+//     	var $e = $(v);
+//     	var _id = $e.attr("id");
+// 			optgroups[_id] = {};
+// 			$e.find("optgroup").each(function(){
+//       	var _r = $(this).data("rel");
+//         $(this).find("option").addClass("is-dyn");
+//       	optgroups[_id][_r] = $(this).html();
+// 			});
+//     });
+//     $subcat.find("optgroup").remove();
+//
+//     var _lastRel;
+//     $cat.on("change",function(){
+//         var _rel = $(this).val();
+//         if(_lastRel === _rel) return true;
+//         _lastRel = _rel;
+//         $subcat.find("option").attr("style","");
+//         $subcat.val("");
+//         $subcat.find(".is-dyn").remove();
+//         if(!_rel) return $subcat.prop("disabled",true);
+//         $subcat.each(function(){
+//         	var $el = $(this);
+//           var _id = $el.attr("id");
+//           $el.append(optgroups[_id][_rel]);
+//         });
+//         $subcat.prop("disabled",false);
+//     });
+//
+// });
+// appointmentform
+
+// jQuery(function($) {
+//   initdocs();
+//
+//   function initdocs() {
+//     var depsAnddocs = {
+//       'УЗИ': ['Белоусова', 'Каверина'],
+//       'Кардиолог': ['Похуй', 'Растрыгина', 'Темарцев']
+//     };
+//
+//     //populate deps
+//     $.each(depsAnddocs,function(k,v){$('#deps').append('<option>' + k + '</option>');});
+//
+//     //populate docs
+//     $('#deps').change(function(){
+//       var $docs = $('#docs');
+//       $docs.html("");
+//       var docs = depsAnddocs[$(this).val()];
+//       $.each(docs,function(k,v){$docs.append('<option>' + v + '</option>');});
+//     });
+//   }
+//
+// });
+
+// nice select
+//
+// $(document).ready(function() {
+//   $('select').niceSelect();
+// });
 
 // clockpicker
 

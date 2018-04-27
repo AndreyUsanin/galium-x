@@ -87,6 +87,7 @@ body {
 
   &__title {
     font-weight: bold;
+    margin-bottom: 1em;
   }
 
   &__textarea {
@@ -120,6 +121,19 @@ body {
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
+
+  &--appointment {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+
+      &:before {
+        font-family: 'icomoon';
+        content: "\e908";
+        padding-right: .5em;
+      }
+
+  }
 
 
   &--textarea {
