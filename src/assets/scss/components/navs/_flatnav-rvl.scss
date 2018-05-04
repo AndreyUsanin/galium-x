@@ -15,7 +15,7 @@ $flatnav-rvl-height: 90px;
 
     &__header {
       height: $flatnav-rvl-height;
-      padding: 0 2em;
+      padding: 0;
       background: transparent;
     }
 
@@ -82,6 +82,16 @@ $flatnav-rvl-height: 90px;
       color: $black;
     }
 
+}
+
+// stickynav
+.flatnav-rvl__sticky {
+  background: $primary-color;
+  padding: 0 2em;
+}
+
+.flatnav-rvl__sticky.is-stuck {
+  background: $primary-color;
 }
 
 

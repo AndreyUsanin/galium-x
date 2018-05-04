@@ -1,4 +1,4 @@
-<div class="appointment-form__area">
+<!-- <div class="appointment-form__area">
   <h2 class="appointment-form__title">Запись на прием:</h2>
   <form class="appointment-form" action="https://formspree.io/rvwdude@gmail.com" method="POST">
     <div class="grid-x grid-margin-x">
@@ -31,7 +31,55 @@
       </div>
       <div class="medium-12 cell">
         <button class="knb knb--appointment" type="submit" name="_next" value="./" value="Записаться на прием">Записаться на прием</button>
-        <!-- <a class="knb" type="submit" value="Отправить"><span class="knb__icon icon-write"></span>Записаться на прием</a> -->
+      </div>
+    </div>
+  </form>
+</div> -->
+
+<!-- SHORT VERSION -->
+
+<div class="appointment-form__area">
+  <h2 class="appointment-form__title">Запись на прием:</h2>
+  <form class="appointment-form" action="https://formspree.io/rvwdude@gmail.com" method="POST">
+    <div class="grid-x grid-margin-x">
+      <div class="medium-6 cell">
+        <label for="">Направление:
+          <select name="Направление" id="parent_selection">
+              <option value="">Выберите направление</option>
+              <option name="УЗИ" value="uzi">УЗИ</option>
+              <option name="Кардиолог" value="cardiolog">Кардиолог</option>
+              <option name="Терапевт" value="terapevt">Терапевт</option>
+          </select>
+        </label>
+      </div>
+      <div class="medium-6 cell">
+        <label for="">Выберите доктора:
+          <select name="Доктор" id="child_selection">
+          </select>
+        </label>
+      </div>
+      <div class="medium-6 cell">
+        <label for="">Дата приема:
+          <input type="text" name="Дата" class="appointment-form__date" placeholder="Дата">
+        </label>
+      </div>
+      <div class="medium-6 cell">
+        <label for="">Время примема:
+          <input name="Время" class="clockpicker" type="text" class="" value="09:00">
+        </label>
+      </div>
+      <div class="medium-6 cell">
+        <label for="">Ваше имя:
+          <input name="Имя пациента" type="text" placeholder="Полное имя">
+        </label>
+      </div>
+      <div class="medium-6 cell">
+        <label for="">Номер телефона:
+          <input name="Телефон" type="text" placeholder="Телефон">
+        </label>
+      </div>
+      <div class="medium-12 cell">
+        <button class="knb knb--appointment" type="submit" name="_next" value="./" value="Записаться на прием">Записаться на прием</button>
       </div>
     </div>
   </form>

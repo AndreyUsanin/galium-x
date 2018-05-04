@@ -1,0 +1,66 @@
+// docform
+
+.docform-holder {
+  position: relative;
+  top: 0;
+}
+
+.docform {
+  position: absolute;
+  // margin-top: -300px;
+
+  &__inner {
+    background: $white;
+    box-shadow: 0 2px 10px rgba($black, 0.1);
+  }
+
+
+  &__title {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  &__infobox {
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+  }
+
+  &__img {
+    border-radius: 100%;
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  &__name {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  &__card {
+    display: flex;
+    background: $light-gray;
+    padding: 3em;
+  }
+
+  &__form {
+    margin-top: 2em;
+    padding-bottom: 2em;
+
+    &--last-input {
+      margin: 0;
+    }
+  }
+
+  &__note {
+    color: $dark-gray;
+    display: block;
+    margin: 1em 0 2em;
+  }
+
+  &__note-icon {
+    padding-right: .5em;
+  }
+
+}

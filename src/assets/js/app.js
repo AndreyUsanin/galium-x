@@ -12,6 +12,7 @@ var lightcase = require('../../../node_modules/lightcase/src/js/lightcase.js');
 var isotope = require('../../../node_modules/isotope-layout/dist/isotope.pkgd.js');
 var waypoint = require('../../../node_modules/waypoints/lib/jquery.waypoints.js');
 var niceSelect = require('../../../node_modules/jquery-nice-select/js/jquery.nice-select.js');
+var dataTable = require('../../../node_modules/datatables/media/js/jquery.dataTables.js');
 
 
 // VENDORS FOLDER
@@ -27,6 +28,36 @@ import Foundation from 'foundation-sites';
 
 
 import slick from 'slick-carousel';
+
+
+// datatable
+
+$('.uzi-table').dataTable( {
+  paginate: true,
+  info: false,
+  "language": {
+    "processing": "Подождите...",
+    "search": "Поиск по прайсу:",
+    "lengthMenu": "Показать _MENU_ записей",
+    "info": "Записи с _START_ до _END_ из _TOTAL_ записей",
+    "infoEmpty": "Записи с 0 до 0 из 0 записей",
+    "infoFiltered": "(отфильтровано из _MAX_ записей)",
+    "infoPostFix": "",
+    "loadingRecords": "Загрузка записей...",
+    "zeroRecords": "Записи отсутствуют.",
+    "emptyTable": "В таблице отсутствуют данные",
+    "paginate": {
+      "first": "Первая",
+      "previous": "Предыдущая",
+      "next": "Следующая",
+      "last": "Последняя"
+    },
+    "aria": {
+      "sortAscending": ": активировать для сортировки столбца по возрастанию",
+      "sortDescending": ": активировать для сортировки столбца по убыванию"
+    }
+  }
+} );
 
 
 // test2

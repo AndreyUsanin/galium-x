@@ -1,5 +1,3 @@
-
-
 <section class="main-screen">
   {{> flatnav-rvl}}
   <div class="grid-container">
@@ -8,12 +6,12 @@
         <div class="main-screen__left">
           <div class="main-screen__wellcome">
             <div class="primary-title">
-              <h2  class="primary-title__h primary-title__h--header" class="">Нам не поебать!</h2>
+              <h2  class="primary-title__h primary-title__h--header" class="">Медицинский центр</h2>
             </div>
             <div class="primary-title">
-              <h2  class="primary-title__h primary-title__h--header" class="">но это не точно</h2>
+              <h2  class="primary-title__h primary-title__h--header" class="">«Галиум»</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse officia doloribus explicabo autem voluptas eveniet laudantium possimus expedita sit error.</p>
+            <p> Услуги медцентра насчитывают более 15 направлений, в их числе лабораторные анализы, УЗИ, безоперационное лечение межпозвонковых грыж.</p>
             {{> infobox type= 'h-infobox'}}
           </div>
         </div>
@@ -93,6 +91,48 @@
   </div>
 </section>
 
+<!-- DOCTOR MODAL. MOVE IT -->
+
+<button class="button" data-doc="belousova" data-open="docModal">Click me for a modal</button>
+
+
+<div class="docmodal reveal" id="docModal" data-reveal>
+  <div class="docmodal__inner">
+  <h4 class="docmodal__title">Вы записываетесь на прием к:</h4>
+    <div class="docmodal__card">
+      <div class="doctor-card__imgbox">
+        <img  class="doctor-card__img" src="assets/img/doctor__hazov.jpg" alt="">
+      </div>
+      <div class="doctor-card__infobox">
+        <h3 class="doctor-card__name">Хазов Алексей Петрович</h3>
+        <span>Врач-ревматолог</span>
+        <span>Прием: 2000 р.</span>
+      </div>
+    </div>
+    <form action="" class="docmodal__form">
+      <div class="grid-x">
+        <div class="medium-8 medium-offset-2 cell">
+          <label for="">Ваше имя:
+            <input name="Имя пациента" type="text" placeholder="Полное имя">
+          </label>
+        </div>
+        <div class="medium-8 medium-offset-2 cell">
+          <label for="">Телефон для подтверждения записи:
+            <input class="docmodal__form docmodal__form--last-input" name="Телефон" type="text" placeholder="Телефон">
+          </label>
+          <small class="docmodal__note"><span class="docmodal__note-icon icon-info-circle"></span>Оператор позвонит вам по этому номеру для подтверждения записи в течение 10 минут</small>
+        </div>
+        <div class="medium-8 medium-offset-2 cell">
+          <button class="knb knb--appointment" type="submit" name="_next" value="./" value="Записаться на прием">Записаться на прием</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <button class="docmodal__close" data-close aria-label="Закрыть" type="button">
+    <span class="icon-close modal__icon"></span>
+  </button>
+</div>
+
 
 <section class="galium-map">
   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3925c26b17a74138c2e82bcba4e9da16ed98ccdd8aae7edcd03de9e364f4c112&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
@@ -100,8 +140,4 @@
 
 {{> getintouch}}
 
-<footer class="flat-footer">
-  <div class="grid-container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, veniam, in. Esse, molestias consequatur provident officia? Assumenda commodi, eos eius!</p>
-  </div>
-</footer>
+{{> flat-footer}}
