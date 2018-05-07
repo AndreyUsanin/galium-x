@@ -62,7 +62,8 @@
                     <span>Запись по телефону: <span class="doctor-card__icon icon-iphone"></span>72-22-57</span>
                   </div>
                   <div class="doctor-card__footer-item">
-                    <a class="doctor-card__link--appointment" href="#"><span class="doctor-card__icon icon-write"></span>Запись онлайн</a>
+                      <button class="doctor-card__link--appointment docmodal__button" data-doc="yakovlev" data-open="docModal" href="#">
+                        <span class="doctor-card__icon icon-write"></span>Запись онлайн</button>
                   </div>
                 </div>
               </div>
@@ -71,16 +72,9 @@
         </div>
       </div>
       {{> doctor-card}}
-      {{> doctor-card}}
-      {{> doctor-card}}
-      {{> doctor-card}}
     </div>
     <div class="" id="all-docs" data-toggler=".show">
-      <div class="grid-x">
-        {{> doctor-card}}
-        {{> doctor-card}}
-        {{> doctor-card}}
-        {{> doctor-card}}
+      <div class="grid-x grid-margin-x grid-margin-y">
         {{> doctor-card}}
         {{> doctor-card}}
       </div>
@@ -91,47 +85,7 @@
   </div>
 </section>
 
-<!-- DOCTOR MODAL. MOVE IT -->
-
-<button class="button" data-doc="belousova" data-open="docModal">Click me for a modal</button>
-
-
-<div class="docmodal reveal" id="docModal" data-reveal>
-  <div class="docmodal__inner">
-  <h4 class="docmodal__title">Вы записываетесь на прием к:</h4>
-    <div class="docmodal__card">
-      <div class="doctor-card__imgbox">
-        <img  class="doctor-card__img" src="assets/img/doctor__hazov.jpg" alt="">
-      </div>
-      <div class="doctor-card__infobox">
-        <h3 class="doctor-card__name">Хазов Алексей Петрович</h3>
-        <span>Врач-ревматолог</span>
-        <span>Прием: 2000 р.</span>
-      </div>
-    </div>
-    <form action="" class="docmodal__form">
-      <div class="grid-x">
-        <div class="medium-8 medium-offset-2 cell">
-          <label for="">Ваше имя:
-            <input name="Имя пациента" type="text" placeholder="Полное имя">
-          </label>
-        </div>
-        <div class="medium-8 medium-offset-2 cell">
-          <label for="">Телефон для подтверждения записи:
-            <input class="docmodal__form docmodal__form--last-input" name="Телефон" type="text" placeholder="Телефон">
-          </label>
-          <small class="docmodal__note"><span class="docmodal__note-icon icon-info-circle"></span>Оператор позвонит вам по этому номеру для подтверждения записи в течение 10 минут</small>
-        </div>
-        <div class="medium-8 medium-offset-2 cell">
-          <button class="knb knb--appointment" type="submit" name="_next" value="./" value="Записаться на прием">Записаться на прием</button>
-        </div>
-      </div>
-    </form>
-  </div>
-  <button class="docmodal__close" data-close aria-label="Закрыть" type="button">
-    <span class="icon-close modal__icon"></span>
-  </button>
-</div>
+{{> docmodal}}
 
 
 <section class="galium-map">

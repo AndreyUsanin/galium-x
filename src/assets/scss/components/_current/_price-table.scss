@@ -1,0 +1,68 @@
+
+// price table
+
+.dataTables_length {
+  display: none;
+}
+
+.dataTables_filter input[type="search"] {
+  position: relative !important;
+
+  &:before {
+    font-family: 'icomoon';
+    content: "\e908";
+    padding-right: .5em;
+    color: $black;
+    z-index: 9999;
+  }
+}
+
+
+
+.dataTables_paginate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.paginate_button {
+
+  margin-left: 1em;
+  border: 1px solid $medium-gray;
+  border-radius: 10px;
+  padding: .8em;
+
+  &.current {
+    border: 1px solid $medium-gray;
+    background: $light-gray;
+
+    &:hover {
+
+    }
+  }
+
+  &.disabled {
+    color: $medium-gray;
+    border: none;
+
+    &:hover, &:active {
+
+    }
+  }
+
+  &:hover {
+
+  }
+
+  &:active {
+
+  }
+
+  &.next {
+    border: none;
+  }
+
+  &.previous {
+    border: none;
+  }
+}

@@ -1,0 +1,75 @@
+// docmodal
+
+.docmodal {
+
+  padding: 3em 0;
+  position: relative;
+
+  &__inner {
+    background: $white;
+    z-index: 10;
+  }
+
+
+  &__title {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  &__card {
+    display: flex;
+    background: $light-gray;
+    padding: 3em;
+  }
+
+  &__infobox {
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+  }
+
+  &__img {
+    border-radius: 100%;
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  &__name {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  &__form {
+    margin-top: 2em;
+
+    &--last-input {
+      margin: 0;
+    }
+  }
+
+  &__note {
+    color: $dark-gray;
+    display: block;
+    margin: 1em 0 2em;
+  }
+
+  &__note-icon {
+    padding-right: .5em;
+  }
+
+  &__close {
+    background: transparent;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__button {
+    cursor: pointer;
+  }
+}

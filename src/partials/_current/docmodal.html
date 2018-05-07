@@ -1,0 +1,36 @@
+<!-- DOCTOR MODAL. MOVE IT -->
+
+<div class="docmodal reveal" id="docModal" data-reveal>
+  <div class="docmodal__inner">
+  <h4 class="docmodal__title">Вы записываетесь на прием к:</h4>
+    <div class="docmodal__card">
+      <div class="docmodal__imgbox">
+
+      </div>
+      <div class="docmodal__infobox">
+
+      </div>
+    </div>
+    <form action="" class="docmodal__form">
+      <div class="grid-x">
+        <div class="medium-8 medium-offset-2 cell">
+          <label for="">Ваше имя:
+            <input name="Имя пациента" type="text" placeholder="Полное имя">
+          </label>
+        </div>
+        <div class="medium-8 medium-offset-2 cell">
+          <label for="">Телефон для подтверждения записи:
+            <input class="docmodal__form docmodal__form--last-input" name="Телефон" type="text" placeholder="Телефон">
+          </label>
+          <small class="docmodal__note"><span class="docmodal__note-icon icon-info-circle"></span>Оператор позвонит вам по этому номеру для подтверждения записи в течение 10 минут</small>
+        </div>
+        <div class="medium-8 medium-offset-2 cell">
+          <button class="knb knb--appointment" type="submit" name="_next" value="./" value="Записаться на прием">Записаться на прием</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <button class="docmodal__close" data-close aria-label="Закрыть" type="button">
+    <span class="icon-close modal__icon"></span>
+  </button>
+</div>

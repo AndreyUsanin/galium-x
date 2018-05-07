@@ -29,6 +29,66 @@ import Foundation from 'foundation-sites';
 
 import slick from 'slick-carousel';
 
+// DOCMODAL
+
+var docModalButton = document.querySelectorAll('.docmodal__button');
+var outputDiv = document.querySelector('.docmodal__card');
+
+var yakovlev = ['Яковлев Игорь Васильевич' , 'assets/img/doctor__yakovlev.jpg' , 'Врач-нейрохирург'];
+var hazov = ['Хазов Алексей Петрович' , 'assets/img/doctor__hazov.jpg' , 'Врач-ревматолог'];
+var belousova = ['Белоусова Ольга Николаевна' , 'assets/img/doctor__belousova.jpg' , 'Врач-УЗИ']
+var zaharova = ['Захарова Алла Ивановна' , 'assets/img/doctor__zaharova.jpg' , 'Врач-гинеколог']
+var rastrigina = ['Расстрыгина Людмила Николаевна' , 'assets/img/doctor__rastrigina.jpg' , 'Врач-УЗИ']
+
+
+
+var docName = document.createElement('h3');
+docName.className = 'docmodal__name';
+var docImg = document.createElement('img');
+docImg.className = 'docmodal__img';
+var docInfo = document.createElement('span');
+
+
+docModalButton.forEach(function(elem){
+  elem.addEventListener('click' , function(e){
+  var currentDoc  = elem.dataset.doc;
+
+
+    switch(currentDoc) {
+        case "yakovlev":
+            outputDoc(yakovlev);
+            break;
+        case "hazov":
+            outputDoc(hazov);
+            break;
+        case "belousova":
+            outputDoc(belousova);
+            break;
+        case "zaharova":
+            outputDoc(zaharova);
+            break;
+        case "rastrigina":
+            outputDoc(rastrigina);
+            break;
+        default:
+            currentDoc = 0;
+    }
+  })
+})
+
+
+function outputDoc(currentDoc){
+  docName.innerHTML = currentDoc[0];
+  docImg.src = currentDoc[1];
+  docInfo.innerHTML = currentDoc[2];
+  document.querySelector('.docmodal__imgbox').appendChild(docImg);
+  document.querySelector('.docmodal__infobox').appendChild(docName);
+  document.querySelector('.docmodal__infobox').appendChild(docInfo);
+}
+
+
+
+
 
 // datatable
 
