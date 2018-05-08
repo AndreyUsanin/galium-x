@@ -1,13 +1,17 @@
 // docform
 
 .docform-holder {
-  position: relative;
-  top: 0;
+  // position: relative;
+  // top: 0;
 }
 
 .docform {
-  position: absolute;
-  // margin-top: -300px;
+  // position: absolute;
+  margin-top: -400px;
+
+  @include breakpoint (medium down) {
+    margin: 0;
+  }
 
   &__inner {
     background: $white;

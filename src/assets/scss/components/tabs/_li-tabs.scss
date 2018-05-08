@@ -1,63 +1,63 @@
 
 .tabs-content {
-      background: none;
-      border: none;
+  background: none;
+  border: none;
 }
 
 .li-tabs {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      padding-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-bottom: 2em;
 
-      &__item {
-            padding: 1em;
-            border-left: 1px solid $medium-gray;
-            border-top: 1px solid $medium-gray;
-            border-bottom: 1px solid $medium-gray;
-            background: $white;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
+  &__item {
+    padding: 1em;
+    border-left: 1px solid $medium-gray;
+    border-top: 1px solid $medium-gray;
+    border-bottom: 1px solid $medium-gray;
+    background: $white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 
-            &--last {
-                  border-right: 1px solid $medium-gray;
-            }
-      }
+    &--last {
+      border-right: 1px solid $medium-gray;
+    }
+  }
 
 
-      &__icon {
-            margin-right: 0.5em;
-      }
+  &__icon {
+    margin-right: 0.5em;
+  }
 
-      &__link {
-            color: $black;
-            font-size: 0.9em;
+  &__link {
+    color: $black;
+    font-size: 0.9em;
 
-            &:hover {
-                  color: $black;
-            }
-      }
+    &:hover {
+      color: $black;
+    }
+  }
 }
 
 .li-tabs__item.is-active {
-      background: $black;
-      color: $white;
-      position: relative;
+  background: $black;
+  color: $white;
+  position: relative;
 
 
-      &::after {
-            content: "";
-                  position: absolute;
-                  top: 100%;
-                  left: 42%;
-                  border-top: 15px solid $black;
-                  border-left: 15px solid transparent;
-                  border-right: 15px solid transparent;
-                  transition: all 0.4s ease 0s;
-      }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 42%;
+    border-top: 15px solid $black;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transition: all 0.4s ease 0s;
+  }
 
-      & a {
-            color: $white;
-      }
+  & a {
+    color: $white;
+  }
 }

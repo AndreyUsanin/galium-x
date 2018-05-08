@@ -1,0 +1,35 @@
+
+.tabs-content {
+  background: none;
+  border: none;
+}
+
+.simple-tabs {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    padding: 1em;
+    border: 0;
+  }
+
+  &__link {
+    color: lighten($primary-color, 50%);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    outline: none;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+
+.simple-tabs__item .is-active {
+  color: lighten($primary-color, 50%);
+}

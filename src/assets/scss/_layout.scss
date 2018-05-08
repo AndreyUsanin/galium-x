@@ -50,7 +50,7 @@ body {
 }
 
 .galium-map {
-    z-index: -2;
+  filter: grayscale(50%);
 }
 
 
@@ -219,4 +219,33 @@ body {
     font-weight: bold;
     letter-spacing: -.05em;
   }
+}
+
+// breadcrumbs separator
+
+.breadcrumbs {
+
+  & li {
+
+  }
+
+  & a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    font-family: 'icomoon';
+    content: "\e90a";
+}
+
+
+// pricebox
+
+.pricebox {
+  margin-top: 2em;
+  padding: 2em;
+  box-shadow: 0 2px 10px rgba($black, 0.1)
 }

@@ -75,10 +75,10 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: #f8f8f8;
-$medium-gray: #dedede;
-$dark-gray: #4d4d4d;
-$black: #191e1e;
+$light-gray: #f5f6f8;
+$medium-gray: #e9ecef;
+$dark-gray: #b7babd;
+$black: #080910;
 $white: #ffffff;
 $body-background: $white;
 $body-font-color: $black;
@@ -270,17 +270,17 @@ $badge-font-size: 0.6rem;
 // 10. Breadcrumbs
 // ---------------
 
-$breadcrumbs-margin: 0 0 $global-margin 0;
+$breadcrumbs-margin: $global-margin 0 $global-margin 0;
 $breadcrumbs-item-font-size: rem-calc(11);
-$breadcrumbs-item-color: $primary-color;
-$breadcrumbs-item-color-current: $black;
+$breadcrumbs-item-color: $black;
+$breadcrumbs-item-color-current: $secondary-color;
 $breadcrumbs-item-color-disabled: $medium-gray;
 $breadcrumbs-item-margin: 0.75rem;
 $breadcrumbs-item-uppercase: true;
 $breadcrumbs-item-separator: true;
-$breadcrumbs-item-separator-item: '/';
+$breadcrumbs-item-separator-item: '>';
 $breadcrumbs-item-separator-item-rtl: '\\';
-$breadcrumbs-item-separator-color: $medium-gray;
+$breadcrumbs-item-separator-color: $black;
 
 // 11. Button
 // ----------
@@ -424,14 +424,14 @@ $helptext-color: $black;
 $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
 $input-prefix-color: $black;
-$input-prefix-background: $light-gray;
+$input-prefix-background: $white;
 $input-prefix-border: 1px solid $medium-gray;
 $input-prefix-padding: 1rem;
 $form-label-color: $black;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
-$select-background: $light-gray;
+$select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $black;
@@ -440,8 +440,8 @@ $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
 $input-line-height: $global-lineheight;
-$input-background: $light-gray;
-$input-background-focus: $light-gray;
+$input-background: $white;
+$input-background-focus: $white;
 $input-background-disabled: $medium-gray;
 $input-border: 1px solid $medium-gray;
 $input-border-focus: 1px solid $primary-color;
@@ -780,7 +780,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 $table-background: $white;
 $table-color-scale: 5%;
 $table-border: 1px solid smart-scale($table-background, $table-color-scale);
-$table-padding: rem-calc(8 10 10);
+$table-padding: rem-calc(18 20 20);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);

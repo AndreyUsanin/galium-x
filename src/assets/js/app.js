@@ -31,6 +31,11 @@ import slick from 'slick-carousel';
 
 // DOCMODAL
 
+
+
+
+// docform
+var selector = document.querySelector('#docform__selector');
 var docModalButton = document.querySelectorAll('.docmodal__button');
 var outputDiv = document.querySelector('.docmodal__card');
 
@@ -39,7 +44,7 @@ var hazov = ['Хазов Алексей Петрович' , 'assets/img/doctor__
 var belousova = ['Белоусова Ольга Николаевна' , 'assets/img/doctor__belousova.jpg' , 'Врач-УЗИ']
 var zaharova = ['Захарова Алла Ивановна' , 'assets/img/doctor__zaharova.jpg' , 'Врач-гинеколог']
 var rastrigina = ['Расстрыгина Людмила Николаевна' , 'assets/img/doctor__rastrigina.jpg' , 'Врач-УЗИ']
-
+var kozlova = ['Козлова Козлина Козлиевна' , 'assets/img/doctor__rastrigina.jpg' , 'Врач-УЗИ']
 
 
 var docName = document.createElement('h3');
@@ -49,10 +54,28 @@ docImg.className = 'docmodal__img';
 var docInfo = document.createElement('span');
 
 
+
+
+if(selector) {
+
+  if(selector.name == 'uzi') {
+    outputDoc(belousova);
+  }
+  selector.addEventListener('change' , function(e){
+
+    var currentDoc  = selector[selector.selectedIndex].value;
+    docSwitcher(currentDoc);
+  });
+}
+
 docModalButton.forEach(function(elem){
   elem.addEventListener('click' , function(e){
-  var currentDoc  = elem.dataset.doc;
+    var currentDoc  = elem.dataset.doc;
+    docSwitcher(currentDoc);
+  })
+});
 
+function docSwitcher(currentDoc){
 
     switch(currentDoc) {
         case "yakovlev":
@@ -70,12 +93,13 @@ docModalButton.forEach(function(elem){
         case "rastrigina":
             outputDoc(rastrigina);
             break;
+        case "kozlova":
+            outputDoc(kozlova);
+            break;
         default:
             currentDoc = 0;
     }
-  })
-})
-
+}
 
 function outputDoc(currentDoc){
   docName.innerHTML = currentDoc[0];
@@ -85,9 +109,6 @@ function outputDoc(currentDoc){
   document.querySelector('.docmodal__infobox').appendChild(docName);
   document.querySelector('.docmodal__infobox').appendChild(docInfo);
 }
-
-
-
 
 
 // datatable
@@ -407,6 +428,15 @@ if ($(".li-tabs")[0]){
 	var target = document.getElementById("li-tabs");
 	var options = {
 	  "linkClass": "li-tabs__item"
+	};
+
+	var elem = new Foundation.Tabs($(target), options);
+}
+// LI-TABS
+if ($(".simple-tabs")[0]){
+	var target = document.getElementById("simple-tabs");
+	var options = {
+	  "linkClass": "simple-tabs__item"
 	};
 
 	var elem = new Foundation.Tabs($(target), options);
