@@ -1,0 +1,42 @@
+
+// profile-table
+
+.profile-table {
+
+  font-size: .9em;
+
+  tbody {
+    border: 0;
+  }
+
+  tr {
+    border-bottom: 1px solid $light-gray;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  td:nth-child(odd){
+    font-weight: bold;
+  }
+}
+
+
+// profile list
+
+.profile-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+
+    &:before {
+      font-family: 'FontAwesome';
+      content: "\f14a";
+      padding-right: .5em;
+      color: $black;
+    }
+  }
+}

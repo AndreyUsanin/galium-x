@@ -12,6 +12,11 @@
   &__profile {
     display: flex;
     padding: 2em;
+    // 
+    // &--profile {
+    //   padding-left: 0;
+    //   padding-top: 0;
+    // }
   }
 
   &__imgbox {
@@ -63,11 +68,15 @@
   &__footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid $light-gray;
+    border-top: 1px solid $medium-gray;
+
+    &--profile {
+      flex-direction: column;
+    }
   }
 
   &__footer-item {
-    border-right: 1px solid $light-gray;
+    border-right: 1px solid $medium-gray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,6 +86,11 @@
     &:nth-last-child(1) {
       border-right: 0;
     }
+
+      &--profile {
+        margin-top: 1em;
+      }
+
   }
 }
 

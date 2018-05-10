@@ -3,6 +3,7 @@ $section-margin: 5em;
 
 body {
   height: 100%;
+  background: $medium-gray;
 
   // fix for blocky-slider
   overflow-x: hidden;
@@ -27,9 +28,15 @@ body {
       }
 }
 
+
 .departament-area {
   background: $light-gray;
   padding: 4em 0;
+}
+
+.doc-area {
+  background: $white;
+  padding: 2em 0;
 }
 
 .doctors-area {
@@ -39,6 +46,16 @@ body {
 
 .price-area {
   margin-bottom: 20em;
+}
+
+.testimonials-area {
+  background: $medium-gray;
+  padding: 4em 0;
+  margin-bottom: 20em;
+}
+
+.map-n-contacts-area {
+  background: $medium-gray;
 }
 
 .flat-footer {
@@ -247,5 +264,6 @@ body {
 .pricebox {
   margin-top: 2em;
   padding: 2em;
-  box-shadow: 0 2px 10px rgba($black, 0.1)
+  box-shadow: 0 2px 10px rgba($black, 0.1);
+  background: $white;
 }

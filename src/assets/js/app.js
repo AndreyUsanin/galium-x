@@ -538,13 +538,16 @@ $('.slider-nav').slick({
 
 // SLIDER RENAME IT
 
-$('.sld').slick({
+$('.doc-testimonials').slick({
   dots: false,
   infinite: false,
   speed: 300,
-  slidesToShow: 4,
+  slidesToShow: 1,
   slidesToScroll: 1,
-  appendArrows: '.sld__nav',
+  adaptiveHeight: true,
+  appendArrows: '.doc-testimonials__nav',
+  prevArrow: '<button type="button" class="doc-testimonials__nav-left"><i class="fas fa-arrow-left doc-testimonials__icon"></i></button>',
+  nextArrow: '<button type="button" class="doc-testimonials__nav-right"><i class="fas fa-arrow-right doc-testimonials__icon"></i></button>',
 
   responsive: [
     {

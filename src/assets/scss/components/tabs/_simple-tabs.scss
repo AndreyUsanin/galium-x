@@ -30,6 +30,10 @@
 }
 
 
-.simple-tabs__item .is-active {
-  color: lighten($primary-color, 50%);
+.simple-tabs__item.is-active {
+  color: $primary-color;
+}
+
+.simple-tabs__item.is-active a {
+  color: $primary-color;
 }

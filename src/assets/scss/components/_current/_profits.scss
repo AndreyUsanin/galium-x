@@ -1,0 +1,43 @@
+.profit {
+
+  display: flex;
+  margin-top: 2em;
+
+&__info {
+  padding-left: 2em;
+}
+
+&__title {
+  font-size: 1.5em;
+}
+
+  &__iconbox {
+    margin-bottom: 2em;
+  }
+
+  &__icon {
+    font-size: 4rem;
+    position: relative;
+    color: $black;
+
+    &::before {
+      z-index: 2;
+      position: relative;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 4rem;
+      height: 4rem;
+      background-color: lighten($primary-color, 70%);
+      opacity: 0.9;
+      left: -8px;
+      bottom: -8px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+
+}

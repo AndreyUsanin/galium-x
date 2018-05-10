@@ -1,0 +1,68 @@
+{{> flatnav-rvl}}
+
+<div class="grid-container">
+  <nav aria-label="You are here:" role="navigation">
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Доктора</a></li>
+      <li>
+        <span class="show-for-sr">Current: </span>Белоусова Ольга Николаевна
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+<section class="section doc-area">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="medium-6 cell">
+        <div class="doctor-card__inner">
+          <div class="doctor-card__profile doctor-card__profile--profile">
+            <div class="doctor-card__imgbox">
+              <img  class="doctor-card__img" src="../assets/img/doctor__belousova.jpg" alt="">
+              <a class="" href="#"><span class="doctor-card__icon icon-chat"></span>Отзывы</a>
+            </div>
+            <div class="doctor-card__infobox">
+              <h3 class="doctor-card__name">Белоусова Ольга Николаевна</h3>
+              <span>Врач-УЗИ</span>
+              <span>Стаж 19 лет / Врач высшей категории</span>
+              <span>Приём от 12569 руб.</span>
+            </div>
+          </div>
+          <div class="doctor-card__footer doctor-card__footer--profile">
+            <div class="doctor-card__footer-item doctor-card__footer-item--profile">
+              <span>Запись по телефону: <span class="doctor-card__icon icon-iphone"></span>72-22-57</span>
+            </div>
+            <div class="doctor-card__footer-item doctor-card__footer-item--profile">
+              <button class="doctor-card__link--appointment docmodal__button" data-doc="belousova" data-open="docModal" href="#">
+                <span class="doctor-card__icon icon-write"></span>Запись онлайн</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="medium-6 cell">
+        <h4>Информация о враче:</h4>
+        {{> belousova-table}}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="testimonials-area">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="medium-12 cell">
+        <h3 class="text-center">Отзывы всяких петрушек:</h3>
+      </div>
+      <div class="medium-12 cell">
+        {{> doc-testimonials}}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{> map-n-contacts}}
+{{> flat-footer}}

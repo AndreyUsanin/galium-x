@@ -1,0 +1,60 @@
+
+.doc-testimonials__area {
+  position: relative;
+}
+
+.doc-testimonials {
+
+  padding: 0 5em;
+
+  &__inner {
+    padding: 2em;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  &__text {
+    color: $black;
+    margin: 1em 0;
+    font-size: .9em;
+  }
+
+  &__patient {
+    font-weight: bold;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    perspective: 1000px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+
+  &__nav-left {
+    background: $light-gray;
+    left: 0;
+    padding: 1em;
+    cursor: pointer;
+  }
+
+  &__nav-right {
+    background: $light-gray;
+    right: 0;
+    padding: 1em;
+    cursor: pointer;
+  }
+
+  &__star {
+    color: $secondary-color;
+    font-size: .9em;
+  }
+}
