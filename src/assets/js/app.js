@@ -584,20 +584,18 @@ $('.doc-testimonials').slick({
 
 
 
-
-
  $(document).on('open.zf.reveal', function()
   {
 	var burger = document.querySelector('.flatnav-rvl-burger__icon');
 	burger.classList.remove('icon-menu');
-	burger.classList.add('icon-cross2');
+	burger.classList.add('icon-close');
 
   });
 
  $(document).on('closed.zf.reveal', function()
   {
 	var burger = document.querySelector('.flatnav-rvl-burger__icon');
-	burger.classList.remove('icon-cross2');
+	burger.classList.remove('icon-close');
 	burger.classList.add('icon-menu');
   });
 
@@ -749,28 +747,6 @@ $('.count__number').counterUp({
     delay: 10,
     time: 1000
 });
-
-
-// REVEAL тоглер костылики
-
-
-
-
-
- $(document).on('open.zf.reveal', function()
-  {
-	var burger = document.querySelector('.flatnav-rvl-burger__icon');
-	burger.classList.remove('icon-menu');
-	burger.classList.add('icon-cross2');
-
-  });
-
- $(document).on('closed.zf.reveal', function()
-  {
-	var burger = document.querySelector('.flatnav-rvl-burger__icon');
-	burger.classList.remove('icon-cross2');
-	burger.classList.add('icon-menu');
-  });
 
 
 	// VERTICAL Timeline

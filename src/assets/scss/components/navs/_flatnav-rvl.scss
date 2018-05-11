@@ -49,6 +49,11 @@ $flatnav-rvl-height: 90px;
       color: $white;
     }
 
+    &--reveal {
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+
     @include breakpoint(small down) {
       padding-left: 0;
     }
@@ -63,23 +68,23 @@ $flatnav-rvl-height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 150;
+  z-index: 9999;
+  position: absolute;
+  right: 2em;
 
     &__inner {
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      width: 3em;
-      height: 3em;
-      background: $white;
-      border: 1px solid $black;
+      background: transparent;
+      border: 0;
       border-radius: 100%;
     }
 
     &__icon {
-      font-size: 1em;
-      color: $black;
+      font-size: 2em;
+      color: $white;
     }
 
 }
@@ -92,14 +97,15 @@ $flatnav-rvl-height: 90px;
 
 .flatnav-rvl__sticky.is-stuck {
   background: $primary-color;
+
 }
 
 
 // modal
 
 #flatnav-rvl__modal {
-  opacity: 0.9;
-  background: $white;
+  opacity: 1;
+  background: $primary-color;
   position: absolute;
   content: "";
   top: 0;

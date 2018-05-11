@@ -12,7 +12,7 @@
   &__profile {
     display: flex;
     padding: 2em;
-    // 
+    //
     // &--profile {
     //   padding-left: 0;
     //   padding-top: 0;
@@ -68,7 +68,11 @@
   &__footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid $medium-gray;
+
+    @include breakpoint(small down) {
+      flex-direction: column;
+    }
+
 
     &--profile {
       flex-direction: column;
@@ -76,11 +80,15 @@
   }
 
   &__footer-item {
-    border-right: 1px solid $medium-gray;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1 0 auto;
+
+    @include breakpoint(medium down) {
+      flex-direction: column;
+      margin-top: 2em;
+    }
 
 
     &:nth-last-child(1) {
@@ -118,8 +126,7 @@
 
   &__profile {
     display: flex;
-
-  }
+    }
 
   &__imgbox {
     display: flex;
@@ -177,16 +184,23 @@
   &__footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid $light-gray;
+
+    @include breakpoint(small down) {
+      flex-direction: column;
+    }
+
   }
 
   &__footer-item {
-    border: 1px solid $light-gray;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1 0 auto;
 
+    @include breakpoint(medium down) {
+      flex-direction: column;
+      margin-top: 2em;
+    }
 
     &:nth-last-child(1) {
       border-right: 0;

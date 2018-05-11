@@ -21,6 +21,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-galium-cross:before {
+  content: "\e918";
+}
+
 .icon-info-circle:before {
   content: "\f05a";
 }

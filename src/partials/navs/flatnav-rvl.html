@@ -1,7 +1,7 @@
-<header class="flatnav-rvl__header" data-sticky-container>
-  <div class="flatnav-rvl__sticky sticky" data-sticky data-margin-top="0">
+<header class="flatnav-rvl__header">
+  <div class="flatnav-rvl__sticky">
     <div class="grid-x">
-      <div class="medium-2 small-12 cell">
+      <div class="medium-3 small-12 cell">
         <div class="flatnav-rvl__logo">
           {{> logo type='logo'}}
           <div class="flatnav-rvl-burger" data-toggle="flatnav-rvl__modal">
@@ -11,10 +11,10 @@
           </div>
         </div>
       </div>
-      <div class="medium-10 cell">
+      <div class="medium-9 cell show-for-medium">
         <!-- FLATNAV-RVL ORIGIN -->
         <div class="flatnav-rvl__nav">
-          <ul id="flatnav-rvl" class="flatnav-rvl show-for-medium">
+          <ul id="flatnav-rvl" class="flatnav-rvl">
             <li><a class="flatnav-rvl__link" href="">Направления</a></li>
             <li><a class="flatnav-rvl__link"  href="">УЗИ</a></li>
             <li><a class="flatnav-rvl__link"  href="">Анализы</a></li>
@@ -31,19 +31,24 @@
 
 <div class="full reveal" id="flatnav-rvl__modal" data-reveal>
   <div class="flatnav-rvl__modal-inner">
-    <ul id="flatnav-rvl" class="flatnav-rvl flatnav-rvl--right vertical menu">
+    <span class="icon-galium-cross"></span>
+    <ul class="flatnav-rvl flatnav-rvl--right vertical menu">
       <li class="flatnav-rvl__item">
-        <a class="flatnav-rvl__link" href="#">Home</a>
+        <a class="flatnav-rvl__link flatnav-rvl__link--reveal" href="http://localhost:8000/#departament-area">Направления</a>
       </li>
       <li class="flatnav-rvl__item">
-        <a class="flatnav-rvl__link" href="#">Services</a>
+        <a class="flatnav-rvl__link flatnav-rvl__link--reveal" href="#">УЗИ</a>
       </li>
       <li class="flatnav-rvl__item">
-        <a class="flatnav-rvl__link" href="#">Process</a>
+        <a class="flatnav-rvl__link flatnav-rvl__link--reveal" href="http://localhost:8000/#doctors-area">Наши доктора</a>
       </li>
       <li class="flatnav-rvl__item">
-        <a class="flatnav-rvl__link"  href="#">Portfolio</a>
+        <a class="flatnav-rvl__link flatnav-rvl__link--reveal"  href="#map-n-contacts-area">Контакты</a>
       </li>
     </ul>
+    <div class="galium-call">
+      <span class="galium-call__icon icon-iphone"></span>
+      <span class="galium-call__phone">72-22-57</span>
+    </div>
   </div>
 </div>

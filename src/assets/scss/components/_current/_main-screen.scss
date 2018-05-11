@@ -1,0 +1,36 @@
+
+
+.main-screen {
+  position: relative;
+  background: url('../img/screen-shape.png')  no-repeat top center;
+  background-color: $primary-color;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+
+  @include breakpoint(medium down) {
+    height: auto;
+  }
+
+  &__left {
+    height: calc(100vh - 90px);
+    color: $white;
+    display: flex;
+    align-items: center;
+    color: $white;
+
+      @include breakpoint(medium down) {
+        height: auto;
+      }
+  }
+
+  &__right {
+    height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+
+      @include breakpoint(medium down) {
+        height: auto;
+      }
+  }
+}

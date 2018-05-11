@@ -71,5 +71,11 @@
 
   &__button {
     cursor: pointer;
+    border-radius: 0;
+    border-top-left-radius: $global-radius;
+
+    @include breakpoint(medium down) {
+      border-top-left-radius: 0;
+    }
   }
 }

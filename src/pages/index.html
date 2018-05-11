@@ -2,21 +2,21 @@
   {{> flatnav-rvl}}
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
-      <div class="medium-6 cell">
+      <div class="large-6 medium-12 cell show-for-medium">
         <div class="main-screen__left">
           <div class="main-screen__wellcome">
             <div class="primary-title">
-              <h2  class="primary-title__h primary-title__h--header" class="">Медицинский центр</h2>
+              <h2  class="primary-title__h primary-title__h--header" class="">Запись на прием</h2>
             </div>
             <div class="primary-title">
-              <h2  class="primary-title__h primary-title__h--header" class="">«Галиум»</h2>
+              <h2  class="primary-title__h primary-title__h--header" class="">к проверенным врачам</h2>
             </div>
-            <p> Услуги медцентра насчитывают более 15 направлений, в их числе лабораторные анализы, УЗИ, безоперационное лечение межпозвонковых грыж.</p>
+            <!-- <p> Услуги медцентра насчитывают более 15 направлений, в их числе лабораторные анализы, УЗИ, безоперационное лечение межпозвонковых грыж.</p> -->
             {{> infobox type= 'h-infobox'}}
           </div>
         </div>
       </div>
-      <div class="medium-6 cell">
+      <div class="large-6 medium-12 cell">
         <div class="main-screen__right">
           <div class="main-screen__wellcome">
             {{> appointment-form}}
@@ -31,7 +31,7 @@
 
 
 
-<section class="doctors-area">
+<section id="doctors-area" class="doctors-area">
   <div class="grid-container">
     <div class="grid-x grid-margin-x grid-margin-y">
       <div class="medium-12 cell">
@@ -46,52 +46,62 @@
         <div class="chief-card">
           <div class="chief-card__inner">
             <div class="chief-card__profile">
-              <div class="chief-card__imgbox">
-                <img class="chief-card__img" src="assets/img/main-doc.png" alt="">
-              </div>
-              <div class="chief-card__content">
-                <div class="chief-card__infobox">
-                  <h2 class="chief-card__name">Игорек Яковлев</h2>
-                  <span>Главный врач «Галиума», Врач-нейрохирург высшей категории</span>
-                  <span>Прием: 2000 р.</span>
-                  <p class="chief-card__appeal">Пишет техсты нам нихто. Техсты у нас чисто сугубо психологические и возникают спонтанно. Ну это… это не есть, то есть сказать, музыка, это данный этап, так называемая эйфория. Ну, поддерживаемая наркотическими веществами там. Ну самое лучшее — это использовать морфина гидрохлорид пятипроцентный раствор.</p>
-                  <img class="chief-card__signature" src="assets/img/signature.png" alt="">
-                </div>
-                <div class="chief-card__footer">
-                  <div class="doctor-card__footer-item">
-                    <span>Запись по телефону: <span class="doctor-card__icon icon-iphone"></span>72-22-57</span>
+              <div class="grid-x">
+                <div class="medium-6 small-12 cell">
+                  <div class="chief-card__imgbox">
+                    <img class="chief-card__img" src="assets/img/main-doc.png" alt="">
                   </div>
-                  <div class="doctor-card__footer-item">
+                </div>
+                <div class="medium-6 small-12 cell">
+                  <div class="chief-card__content">
+                    <div class="chief-card__infobox">
+                      <h2 class="chief-card__name">Игорек Яковлев</h2>
+                      <span>Главный врач «Галиума», Врач-нейрохирург высшей категории</span>
+                      <span>Прием: 2000 р.</span>
+                      <p class="chief-card__appeal">Пишет техсты нам нихто. Техсты у нас чисто сугубо психологические и возникают спонтанно. Ну это… это не есть, то есть сказать, музыка, это данный этап, так называемая эйфория. Ну, поддерживаемая наркотическими веществами там. Ну самое лучшее — это использовать морфина гидрохлорид пятипроцентный раствор.</p>
+                      <img class="chief-card__signature" src="assets/img/signature.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="medium-12 cell">
+                  <div class="chief-card__footer">
+                    <div class="doctor-card__footer-item">
+                      <span>Запись по телефону: <span class="doctor-card__icon icon-iphone"></span>72-22-57</span>
+                    </div>
+                    <div class="doctor-card__footer-item">
                       <button class="doctor-card__link--appointment docmodal__button" data-doc="yakovlev" data-open="docModal" href="#">
                         <span class="doctor-card__icon icon-write"></span>Запись онлайн</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      {{> doctor-card}}
-    </div>
-    <div class="" id="all-docs" data-toggler=".show">
-      <div class="grid-x grid-margin-x grid-margin-y">
-        {{> doctor-card}}
         {{> doctor-card}}
       </div>
+      <div class="" id="all-docs" data-toggler=".show">
+        <div class="grid-x grid-margin-x grid-margin-y">
+          {{> doctor-card}}
+          {{> doctor-card}}
+        </div>
+      </div>
+      <div class="medium-12 cell">
+        <a data-toggle="all-docs">Все докторишки</a>
+      </div>
     </div>
-    <div class="medium-12 cell">
-      <a data-toggle="all-docs">Все докторишки</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-{{> docmodal}}
+  {{> docmodal}}
 
 
-<section class="galium-map">
-  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3925c26b17a74138c2e82bcba4e9da16ed98ccdd8aae7edcd03de9e364f4c112&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
-</section>
+  <!-- <section class="galium-map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3925c26b17a74138c2e82bcba4e9da16ed98ccdd8aae7edcd03de9e364f4c112&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+  </section> -->
 
-{{> getintouch}}
+  <!-- {{> getintouch}} -->
 
-{{> flat-footer}}
+  {{> map-n-contacts}}
+
+  {{> flat-footer}}
