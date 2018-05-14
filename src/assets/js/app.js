@@ -599,6 +599,21 @@ $('.doc-testimonials').slick({
 	burger.classList.add('icon-menu');
   });
 
+// close modal on click
+
+
+ $(document).on('open.zf.reveal', function()
+  {
+	var flatnavModal = document.querySelector('#flatnav-rvl__modal');
+
+  flatnavModal.addEventListener('click' , function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName == 'A') {
+      $(flatnavModal).foundation('close');
+    }
+  })
+
+  });
 
 	// AIR Datepicker
 	//

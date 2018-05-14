@@ -2,7 +2,7 @@ $section-margin: 5em;
 
 html {
   // adds scroll on reveal
-  overflow-y: scroll;
+  // overflow-y: scroll;
 }
 body {
   height: 100%;
@@ -34,6 +34,10 @@ body {
       }
 }
 
+.breadcrumbs-area {
+  background: $medium-gray;
+}
+
 
 .departament-area {
   background: $medium-gray;
@@ -41,7 +45,7 @@ body {
 }
 
 .doc-area {
-  background: $white;
+  background: $medium-gray;
 }
 
 .doctors-area {
@@ -56,7 +60,6 @@ body {
 
 .testimonials-area {
   background: $medium-gray;
-  padding: 4em 0;
   margin-bottom: 20em;
 }
 
@@ -88,8 +91,9 @@ body {
 
   &__title {
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: 0;
   }
+
 
   &__textarea {
     height: 138px !important;
@@ -97,6 +101,37 @@ body {
 
 }
 
+
+.discount {
+
+  display: flex;
+  align-items: center;
+
+
+  &__value {
+    font-weight: bold;
+    color: $white;
+    font-size: 1.4em;
+    margin-left: 1em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    outline: none;
+
+      &:after {
+        content: "\e919";
+        font-family: 'icomoon';
+        position: absolute;
+        color: lighten($primary-color, 50%);
+        right: 0;
+        font-size: 1.4em;
+        z-index: -1;
+      }
+  }
+
+}
 
 
 .knb--textarea {
@@ -199,24 +234,6 @@ body {
 
 .nomargin {
   margin: 0;
-}
-
-// discount
-
-.discount {
-  background: url('../img/screen-shape.png')  no-repeat center center;
-  background-color: $primary-color;
-  background-size: cover;
-  padding: 4em 0;
-  // margin-top: -400px;
-  z-index: -1;
-  color: $white;
-
-  &__accent {
-    font-size: 2em;
-    font-weight: bold;
-    letter-spacing: -.05em;
-  }
 }
 
 // breadcrumbs separator

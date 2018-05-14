@@ -45,6 +45,10 @@
     }
   }
 
+  &__icon-small {
+    padding-right: .3em;
+  }
+
   &__list {
     list-style: none;
     margin: 0;
@@ -53,7 +57,6 @@
 
   &__list-item {
     padding: 1.2em 0;
-    border-bottom: 1px solid $light-gray;
 
     &::before {
       font-family: 'icomoon';

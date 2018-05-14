@@ -47,6 +47,20 @@
     margin-right: .5em;
   }
 
+  &__price {
+
+    del {
+      padding: 0 .5em;
+      color: $dark-gray;
+    }
+
+    &:after {
+    font-family: 'icomoon';
+    content: "\e91a";
+    font-size: .7em;
+    }
+  }
+
   &__link {
 
     &--appointment {

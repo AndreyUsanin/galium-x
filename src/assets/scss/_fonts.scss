@@ -21,9 +21,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-galium-cross:before {
-  content: "\e918";
-}
+
 
 .icon-info-circle:before {
   content: "\f05a";
@@ -51,6 +49,15 @@
 }
 .icon-iphone:before {
   content: "\e913";
+}
+.icon-ruble:before {
+  content: "\e91a";
+}
+.icon-discount-tag:before {
+  content: "\e919";
+}
+.icon-galium-cross:before {
+  content: "\e918";
 }
 .icon-discount:before {
   content: "\e900";

@@ -1,20 +1,27 @@
-
+table.unstriped tbody {
+  background: transparent;
+}
 // profile-table
 
 .profile-table {
 
   font-size: .9em;
 
+
   tbody {
     border: 0;
+    background: transparent !important;
+
   }
 
   tr {
-    border-bottom: 1px solid $light-gray;
+    background: transparent !important;
   }
 
   td {
     vertical-align: top;
+    background: transparent !important;
+    padding-left: 0;
   }
 
   td:nth-child(odd){
