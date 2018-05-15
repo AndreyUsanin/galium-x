@@ -20,6 +20,7 @@ var dataTable = require('../../../node_modules/datatables/media/js/jquery.dataTa
 var counterUp = require('./vendors/jquery.counterup.js');
 var countdown = require('./vendors/jquery.countdown.js');
 var verticalTimeline = require('./vendors/vertical-timeline.js');
+import './vendors/docs.js';
 
 import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
@@ -28,87 +29,31 @@ import Foundation from 'foundation-sites';
 
 
 import slick from 'slick-carousel';
+import IMask from 'imask';
 
-// DOCMODAL
+// phone IMask
 
+var mainPhone = document.querySelector('#main-phone');
+var modalPhone = document.querySelector('#modal-phone');
+// var naprPhone = document.querySelector('#napr-phone');
 
+console.log(modalPhone);
 
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
 
-// docform
-var selector = document.querySelector('#docform__selector');
-var docModalButton = document.querySelectorAll('.docmodal__button');
-var outputDiv = document.querySelector('.docmodal__card');
-
-var yakovlev = ['Яковлев Игорь Васильевич' , 'assets/img/doctor__yakovlev.jpg' , 'Врач-нейрохирург'];
-var hazov = ['Хазов Алексей Петрович' , 'assets/img/doctor__hazov.jpg' , 'Врач-ревматолог'];
-var belousova = ['Белоусова Ольга Николаевна' , 'assets/img/doctor__belousova.jpg' , 'Врач-УЗИ']
-var zaharova = ['Захарова Алла Ивановна' , 'assets/img/doctor__zaharova.jpg' , 'Врач-гинеколог']
-var rastrigina = ['Расстрыгина Людмила Николаевна' , 'assets/img/doctor__rastrigina.jpg' , 'Врач-УЗИ']
-var kozlova = ['Козлова Козлина Козлиевна' , 'assets/img/doctor__rastrigina.jpg' , 'Врач-УЗИ']
-
-
-var docName = document.createElement('h3');
-docName.className = 'docmodal__name';
-var docImg = document.createElement('img');
-docImg.className = 'docmodal__img';
-var docInfo = document.createElement('span');
-
-
-
-
-if(selector) {
-
-  if(selector.name == 'uzi') {
-    outputDoc(belousova);
-  }
-  selector.addEventListener('change' , function(e){
-
-    var currentDoc  = selector[selector.selectedIndex].value;
-    docSwitcher(currentDoc);
-  });
+if(mainPhone) {
+  var mask = new IMask(mainPhone, maskOptions);
 }
 
-docModalButton.forEach(function(elem){
-  elem.addEventListener('click' , function(e){
-    var currentDoc  = elem.dataset.doc;
-    docSwitcher(currentDoc);
-  })
-});
-
-function docSwitcher(currentDoc){
-
-    switch(currentDoc) {
-        case "yakovlev":
-            outputDoc(yakovlev);
-            break;
-        case "hazov":
-            outputDoc(hazov);
-            break;
-        case "belousova":
-            outputDoc(belousova);
-            break;
-        case "zaharova":
-            outputDoc(zaharova);
-            break;
-        case "rastrigina":
-            outputDoc(rastrigina);
-            break;
-        case "kozlova":
-            outputDoc(kozlova);
-            break;
-        default:
-            currentDoc = 0;
-    }
+if(modalPhone) {
+  var mask = new IMask(modalPhone, maskOptions);
 }
 
-function outputDoc(currentDoc){
-  docName.innerHTML = currentDoc[0];
-  docImg.src = currentDoc[1];
-  docInfo.innerHTML = currentDoc[2];
-  document.querySelector('.docmodal__imgbox').appendChild(docImg);
-  document.querySelector('.docmodal__infobox').appendChild(docName);
-  document.querySelector('.docmodal__infobox').appendChild(docInfo);
-}
+
+// var mask = new IMask(naprPhone, maskOptions);
+
 
 
 // datatable

@@ -41,11 +41,11 @@
 <div class="appointment-form__area">
 
   <h2 class="appointment-form__title">Запись на прием:</h2>
-  <form class="appointment-form" action="https://formspree.io/rvwdude@gmail.com" method="POST">
+  <form class="appointment-form" action="https://liveformhq.com/form/94c4e265-6174-4a92-abcf-bc3adfa3fb4a" method="POST" data-abide novalidate>
     <div class="grid-x grid-margin-x">
       <div class="medium-6 cell">
         <label for="">Направление:
-          <select name="Направление" id="parent_selection">
+          <select name="Направление" id="parent_selection" required>
               <option value="">Выберите направление</option>
               <option name="УЗИ" value="uzi">УЗИ</option>
               <option name="Кардиолог" value="cardiolog">Кардиолог</option>
@@ -71,16 +71,17 @@
       </div>
       <div class="medium-6 cell">
         <label for="">Ваше имя:
-          <input name="Имя пациента" type="text" placeholder="Полное имя">
+          <input name="Имя пациента" type="text" placeholder="Полное имя" required>
         </label>
       </div>
       <div class="medium-6 cell">
         <label for="">Номер телефона:
-          <input name="Телефон" type="text" placeholder="Телефон">
+          <input id="main-phone" class="" name="Телефон" type="text" placeholder="Телефон" required>
         </label>
       </div>
       <div class="medium-12 cell">
-        <button class="knb knb--appointment" type="submit" name="_next" value="./" value="Записаться на прием">Записаться онлайн</button>
+        <input type="hidden" value="https://ya.ru" name="_redirect" />
+        <button class="knb knb--appointment" type="submit">Записаться онлайн</button>
       </div>
     </div>
   </form>

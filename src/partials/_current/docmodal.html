@@ -11,22 +11,22 @@
 
       </div>
     </div>
-    <form action="" class="docmodal__form">
+    <form action="https://liveformhq.com/form/95efbe21-43f0-405b-a210-5ac06820f45b" method="POST" data-abide novalidate class="docmodal__form" data-abide novalidate>
       <div class="grid-x">
-        <div class="medium-8 medium-offset-2 cell">
-          <input class="docmodal__hidden" type="hidden">
+        <div class="medium-8 medium-offset-2 cell docmodal__hidden">
           <label for="">Ваше имя:
-            <input name="Имя пациента" type="text" placeholder="Полное имя">
+            <input name="Имя пациента" type="text" placeholder="Полное имя" required>
           </label>
         </div>
         <div class="medium-8 medium-offset-2 cell">
           <label for="">Телефон для подтверждения записи:
-            <input class="docmodal__form docmodal__form--last-input" name="Телефон" type="text" placeholder="Телефон">
+            <input id="modal-phone" class="docmodal__form docmodal__form--last-input" name="Телефон" type="text" placeholder="Телефон" required>
           </label>
           <small class="docmodal__note"><span class="docmodal__note-icon icon-info-circle"></span>Оператор позвонит вам по этому номеру для подтверждения записи в течение 10 минут</small>
         </div>
         <div class="medium-8 medium-offset-2 cell">
           <button class="knb knb--appointment" type="submit" name="_next" value="./" value="Записаться на прием">Записаться на прием</button>
+          <input type="hidden" value="https://ya.ru" name="_redirect" />
         </div>
       </div>
     </form>

@@ -8,22 +8,23 @@
 
       </div>
     </div>
-    <form action="" class="docform__fields">
+    <form class="docform__fields" action="https://liveformhq.com/form/7184797b-1bec-4a7d-830e-4c3d3f2c4607"  method="POST" data-abide novalidate>
       <label for="">Выберите доктора:
         <select name="uzi" id="docform__selector">
-          <option name="УЗИ" value="belousova">Белоусова</option>
-          <option name="Кардиолог" value="rastrigina">Растрыгина</option>
-          <option name="Терапевт" value="kozlova">Козлова</option>
+          <option name="Белоусова" value="belousova">Белоусова</option>
+          <option name="Растрыгина" value="rastrigina">Растрыгина</option>
+          <option name="Козлова" value="kozlova">Козлова</option>
         </select>
       </label>
       <label for="">Ваше имя:
-        <input name="Имя пациента" type="text" placeholder="Полное имя">
+        <input name="Имя пациента" type="text" placeholder="Полное имя" required>
       </label>
       <label for="">Телефон для подтверждения записи:
-        <input name="Телефон" type="tel" placeholder="Телефон">
+        <input id="main-phone" class="" name="Телефон" type="text" placeholder="Телефон" required>
       </label>
       <small class="docform__note"><span class="docform__note-icon icon-info-circle"></span>Оператор позвонит вам по этому номеру для подтверждения записи в течение 10 минут</small>
-      <button class="knb knb--appointment" type="submit" name="_next" value="./" value="Записаться на прием">Записаться на прием</button>
+      <button class="knb knb--appointment" type="submit">Записаться онлайн</button>
+      <input type="hidden" value="https://ya.ru" name="_redirect" />
     </form>
   </div>
 </div>

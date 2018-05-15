@@ -58,17 +58,17 @@
                       <h2 class="chief-card__name">Игорек Яковлев</h2>
                       <span>Главный врач «Галиума», Врач-нейрохирург высшей категории</span>
                       <span>Прием: 2000 р.</span>
-                      <p class="chief-card__appeal">Пишет техсты нам нихто. Техсты у нас чисто сугубо психологические и возникают спонтанно. Ну это… это не есть, то есть сказать, музыка, это данный этап, так называемая эйфория. Ну, поддерживаемая наркотическими веществами там. Ну самое лучшее — это использовать морфина гидрохлорид пятипроцентный раствор.</p>
+                      <p class="chief-card__appeal">Уже более 10 лет врачи медицинского центра «Галиум» доказывают, что медицина может быть одновременно профессиональной, современной и доступной. Коллектив медицинского центра «Галиум» — специалисты первой и высшей категорий, кандидаты медицинских наук с огромным клиническим опытом. Наша главная задача — здоровая и качественная жизнь каждого пациента.</p>
                       <img class="chief-card__signature" src="assets/img/signature.png" alt="">
                     </div>
                   </div>
                 </div>
                 <div class="medium-12 cell">
                   <div class="chief-card__footer">
-                    <div class="doctor-card__footer-item">
-                      <span>Запись по телефону: <span class="doctor-card__icon icon-iphone"></span>72-22-57</span>
+                    <div class="chief-card__footer-item">
+                      <span class="chief-card__graytext">или по телефону: </span><span class="doctor-card__icon icon-iphone"></span><span>72-22-57</span>
                     </div>
-                    <div class="doctor-card__footer-item">
+                    <div class="chief-card__footer-item">
                       <button class="doctor-card__link--appointment docmodal__button" data-doc="yakovlev" data-open="docModal" href="#">
                         <span class="doctor-card__icon icon-write"></span>Запись онлайн</button>
                       </div>
@@ -81,10 +81,9 @@
         </div>
         {{> doctor-card}}
       </div>
-      <div class="" id="all-docs" data-toggler=".show">
+      <div class="" id="all-docs" data-toggler="show">
         <div class="grid-x grid-margin-x grid-margin-y">
-          {{> doctor-card}}
-          {{> doctor-card}}
+          {{> doctor-card-more}}
         </div>
       </div>
       <div class="medium-12 cell">
