@@ -1,0 +1,57 @@
+---
+layout: default
+title: Кардиолог — Холтер мониторинг, ЭКГ, УЗИ сердца
+page-title: Кардиолог
+price-title: Цены на услуги кардиолога
+---
+
+{{> flatnav-rvl}}
+<section class="breadcrumbs-area">
+  <div class="grid-container">
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li>
+          <span class="show-for-sr">Current: </span>{{page-title}}
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="large-6 medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{page-title}}</h2>
+        </div>
+        <p>Врач-кардиолог, сердечно-сосудистый хирург. Проводит диагностику, профилактику и лечение таких заболеваний сердечно-сосудистой системы, как аритмия, тахикардия, тромбофлебит, атеросклероз, гипертония, порок сердца, сердечная недостаточность, а также восстановительное лечение после инфаркта
+        </p>
+        {{> profits}}
+      </div>
+      <div class="large-6 cell">
+        {{> docform}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section price-area">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{price-title}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="pricebox">
+      {{> cardio-price}}
+    </div>
+  </div>
+</section>
+
+{{> map-n-contacts}}
+{{> flat-footer}}

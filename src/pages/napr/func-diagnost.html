@@ -1,0 +1,57 @@
+---
+layout: default
+title: Функциональный диагност — Холтер мониторинг, суточное мониторирование АД, эхокардиография
+page-title: Функциональный диагност
+price-title: Цены на услуги функционального диагноста
+---
+
+{{> flatnav-rvl}}
+<section class="breadcrumbs-area">
+  <div class="grid-container">
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li>
+          <span class="show-for-sr">Current: </span>{{page-title}}
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="large-6 medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{page-title}}</h2>
+        </div>
+        <p>Поводом записаться на прием в центр функциональной диагностики может стать боль в области сердца, нижней части живота или частые головные боли. Использование в работе оборудования позволяет специалисту выявлять раннюю симптоматику заболеваний и определять стадии развития болезней.
+        </p>
+        {{> profits}}
+      </div>
+      <div class="large-6 cell">
+        {{> docform}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section price-area">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{price-title}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="pricebox">
+      {{> funcdiag-price}}
+    </div>
+  </div>
+</section>
+
+{{> map-n-contacts}}
+{{> flat-footer}}

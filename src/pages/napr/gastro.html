@@ -1,0 +1,59 @@
+---
+layout: default
+title: Гастроэнтеролог — лечение гастрита, панкреатита, язвенной болезни
+page-title: Гастроэнтеролог
+price-title: Цены на услуги гастроэнтеролога
+---
+
+{{> flatnav-rvl}}
+<section class="breadcrumbs-area">
+  <div class="grid-container">
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li>
+          <span class="show-for-sr">Current: </span>{{page-title}}
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="large-6 medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{page-title}}</h2>
+        </div>
+        <p>Лечение заболеваний желудка и 12-перстной кишки: язвенной болезни, эрозивных и атрофических гастритоа.
+        Заболеваний поджелудочной железы, желчного пузыря и желчных протоков (панкреатит, холецистит и пр.), желчнокаменная болезнь.
+        Заболеваний кишечника метеоризм и колиты, синдром раздраженного кишечника (СРК), дисбактериоз кишечника, запоры и дискинезия толстой кишки.
+        </p>
+        {{> profits}}
+      </div>
+      <div class="large-6 cell">
+        {{> docform}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section price-area">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{price-title}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="pricebox">
+      {{> gastro-price}}
+    </div>
+  </div>
+</section>
+
+{{> map-n-contacts}}
+{{> flat-footer}}

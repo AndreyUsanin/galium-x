@@ -9,22 +9,64 @@
       </div>
     </div>
     <form class="docform__fields" action="https://liveformhq.com/form/7184797b-1bec-4a7d-830e-4c3d3f2c4607"  method="POST" data-abide novalidate>
+      <div class="docmodal__hidden"></div>
       <label for="">Выберите доктора:
+
+        {{#ifpage 'uzi'}}
         <select name="uzi" id="docform__selector">
           <option name="Белоусова" value="belousova">Белоусова</option>
-          <option name="Растрыгина" value="rastrigina">Растрыгина</option>
-          <option name="Козлова" value="kozlova">Козлова</option>
+          <option name="Каверина" value="kaverina">Каверина</option>
         </select>
+        {{/ifpage}}
+
+        {{#ifpage 'gastro'}}
+        <select name="gastro" id="docform__selector">
+          <option name="Золотова" value="zolotova">Золотова</option>
+          <option name="Батушкина" value="batushkina">Батушкина</option>
+        </select>
+        {{/ifpage}}
+
+        {{#ifpage 'girudo'}}
+        <select name="girudo" id="docform__selector">
+          <option name="Долгугшин" value="dolgushin">Долгугшин</option>
+        </select>
+        {{/ifpage}}
+
+        {{#ifpage 'gynecolog'}}
+        <select name="gynecolog" id="docform__selector">
+          <option name=">Захарова" value="zaharova">Захарова</option>
+          <option name="Мохова" value="mohova">Мохова</option>
+        </select>
+        {{/ifpage}}
+
+        {{#ifpage 'cardiolog'}}
+        <select name="cardiolog" id="docform__selector">
+          <option name="Расстрыгина" value="rastrigina">Расстрыгина</option>
+        </select>
+        {{/ifpage}}
+
+        {{#ifpage 'func-diagnost'}}
+        <select name="func-diag" id="docform__selector">
+          <option name="Темарцев" value="temarcev">Темарцев</option>
+        </select>
+        {{/ifpage}}
+
+        {{#ifpage 'nevrolog'}}
+        <select name="nevrolog" id="docform__selector">
+          <option name="Мацкевич" value="mazkevich">Мацкевич</option>
+        </select>
+        {{/ifpage}}
+
       </label>
       <label for="">Ваше имя:
-        <input name="Имя пациента" type="text" placeholder="Полное имя" required>
+        <input id="main-name" name="Имя пациента" type="text" placeholder="Полное имя" required>
       </label>
-      <label for="">Телефон для подтверждения записи:
+      <label for="main-phone">Телефон для подтверждения записи:
         <input id="main-phone" class="" name="Телефон" type="text" placeholder="Телефон" required>
       </label>
       <small class="docform__note"><span class="docform__note-icon icon-info-circle"></span>Оператор позвонит вам по этому номеру для подтверждения записи в течение 10 минут</small>
       <button class="knb knb--appointment" type="submit">Записаться онлайн</button>
-      <input type="hidden" value="https://ya.ru" name="_redirect" />
+      <input type="hidden" value="http://localhost:8000/thankyou.html" name="_redirect" />
     </form>
   </div>
 </div>

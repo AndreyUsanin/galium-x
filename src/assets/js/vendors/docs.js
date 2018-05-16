@@ -5,19 +5,21 @@ var selector = document.querySelector('#docform__selector');
 var docModalButton = document.querySelectorAll('.docmodal__button');
 var outputDiv = document.querySelector('.docmodal__card');
 
-var yakovlev = ['Яковлев Игорь Васильевич' , 'assets/img/doctor__yakovlev.jpg' , 'Врач-нейрохирург'];
-var belousova = ['Белоусова Ольга Николаевна' , 'assets/img/doctor__belousova.jpg' , 'Врач-УЗИ'];
-var hazov = ['Хазов Алексей Петрович' , 'assets/img/doctor__hazov.jpg' , 'Врач-ревматолог'];
-var zaharova = ['Захарова Алла Ивановна' , 'assets/img/doctor__zaharova.jpg' , 'Врач-гинеколог'];
-var zolotova = ['Золотова Людмила Николаевна' , 'assets/img/doctor__zolotova.jpg' , 'Врач-гастроэнтеролог'];
-var arseneva = ['Арсеньева Елена Борисовна' , 'assets/img/doctor__arseneva.jpg' , 'Врач-эндокринолог'];
-var mazkevich = ['Мацкевич Маргарита Леонидовна' , 'assets/img/doctor__mazkevich.jpg' , 'Врач-невролог'];
-var temarcev = ['Темарцев Александр Александрович' , 'assets/img/doctor__temarcev.jpg' , 'Врач функциональной диагностики'];
-var batushkina = ['Батушкина Валентина Петровна' , 'assets/img/doctor__batushkina.jpg' , 'Врач-гастроэнтеролог'];
-var goncharova = ['Гончарова Татьяна Васильевна' , 'assets/img/doctor__goncharova.jpg' , 'Врач-терапевт'];
-var mohova = ['Мохова Наталия Константиновна' , 'assets/img/doctor__mohova.jpg' , 'Врач-гинеколог'];
-var rastrigina = ['Расстрыгина Людмила Николаевна' , 'assets/img/doctor__rastrigina.jpg' , 'Врач-УЗИ'];
-var kozlova = ['Козлова Козлина Козлиевна' , 'assets/img/doctor__kozlova.jpg' , 'Врач-УЗИ'];
+var yakovlev = ['Яковлев Игорь Васильевич' , 'http://localhost:8000/assets/img/doctor__yakovlev.jpg' , 'Врач-нейрохирург'];
+var belousova = ['Белоусова Ольга Николаевна' , 'http://localhost:8000/assets/img/doctor__belousova.jpg' , 'Врач-УЗИ'];
+var hazov = ['Хазов Алексей Петрович' , 'http://localhost:8000/assets/img/doctor__hazov.jpg' , 'Врач-ревматолог'];
+var zaharova = ['Захарова Алла Ивановна' , 'http://localhost:8000/assets/img/doctor__zaharova.jpg' , 'Врач-гинеколог'];
+var zolotova = ['Золотова Людмила Николаевна' , 'http://localhost:8000/assets/img/doctor__zolotova.jpg' , 'Врач-гастроэнтеролог'];
+var arseneva = ['Арсеньева Елена Борисовна' , 'http://localhost:8000/assets/img/doctor__arseneva.jpg' , 'Врач-эндокринолог'];
+var mazkevich = ['Мацкевич Маргарита Леонидовна' , 'http://localhost:8000/assets/img/doctor__mazkevich.jpg' , 'Врач-невролог'];
+var temarcev = ['Темарцев Александр Александрович' , 'http://localhost:8000/assets/img/doctor__temarcev.jpg' , 'Врач функциональной диагностики'];
+var batushkina = ['Батушкина Валентина Петровна' , 'http://localhost:8000/assets/img/doctor__batushkina.jpg' , 'Врач-гастроэнтеролог'];
+var goncharova = ['Гончарова Татьяна Васильевна' , 'http://localhost:8000/assets/img/doctor__goncharova.jpg' , 'Врач-терапевт'];
+var mohova = ['Мохова Наталия Константиновна' , 'http://localhost:8000/assets/img/doctor__mohova.jpg' , 'Врач-гинеколог'];
+var rastrigina = ['Расстрыгина Людмила Николаевна' , 'http://localhost:8000/assets/img/doctor__rastrigina.jpg' , 'Кардиолог'];
+var kozlova = ['Козлова Козлина Козлиевна' , 'http://localhost:8000/assets/img/doctor__kozlova.jpg' , 'Врач-УЗИ'];
+var kaverina = ['Каверина Галина Николаевна' , 'http://localhost:8000/assets/img/doctor__kaverina.jpg' , 'Врач-УЗИ'];
+var dolgushin = ['Долгушин' , 'http://localhost:8000/assets/img/doctor__dolgushin.jpg' , 'Гирудотерапевт'];
 
 
 var docName = document.createElement('h3');
@@ -32,11 +34,16 @@ var hiddenDiv = document.querySelector('.docmodal__hidden');
 
 if(selector) {
 
-  if(selector.name == 'uzi') {
-    outputDoc(belousova);
-  }
-  selector.addEventListener('change' , function(e){
+  var currentDoc = (selector[0].value);
+  docSwitcher(currentDoc);
 
+  console.log(selector.length);
+
+  if(selector.length == 1) {
+    selector.disabled = 'true';
+  }
+
+  selector.addEventListener('change' , function(e){
     var currentDoc  = selector[selector.selectedIndex].value;
     docSwitcher(currentDoc);
   });
@@ -94,6 +101,12 @@ function docSwitcher(currentDoc){
             break;
         case "mohova":
             outputDoc(mohova);
+            break;
+        case "kaverina":
+            outputDoc(kaverina);
+            break;
+        case "dolgushin":
+            outputDoc(dolgushin);
             break;
         default:
             currentDoc = 0;

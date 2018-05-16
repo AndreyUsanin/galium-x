@@ -1,3 +1,10 @@
+---
+layout: default
+title: Гинеколог — консультация, лечение заболеваний органов малого таза, ЗППП, введение/удаление ВМС
+page-title: Гинеколог
+price-title: Цены на услуги гинеколога
+---
+
 {{> flatnav-rvl}}
 <section class="breadcrumbs-area">
   <div class="grid-container">
@@ -5,7 +12,7 @@
       <ul class="breadcrumbs">
         <li><a href="#">Главная</a></li>
         <li>
-          <span class="show-for-sr">Current: </span>УЗИ Диагностика
+          <span class="show-for-sr">Current: </span>{{page-title}}
         </li>
       </ul>
     </nav>
@@ -18,12 +25,10 @@
     <div class="grid-x grid-margin-x">
       <div class="large-6 medium-12 cell">
         <div class="primary-title">
-          <h2  class="primary-title__h" class="">УЗИ взрослым</h2>
+          <h2  class="primary-title__h" class="">{{page-title}}</h2>
         </div>
-        <div class="primary-title">
-          <h2  class="primary-title__h" class="">и детям</h2>
-        </div>
-        <p>Проводит ведение беременности, диагностику и лечение гинекологических заболеваний, радиохирургическое лечение эрозии шейки матки, установку и удаление ВМС, кольпоскопию, УЗИ омт, беременности 1,2,3 триместр, УЗИ щитовидной железы, молочной железы ,узи органов брюшной полости, почек.</p>
+        <p>Врач акушер-гинеколог, врач УЗД. Проводит лечение шейки матки радиоволновым методом, удаление папиллом, кондилом женских половых органов, установку и удаление ВМК
+        </p>
         {{> profits}}
       </div>
       <div class="large-6 cell">
@@ -38,12 +43,12 @@
     <div class="grid-x">
       <div class="medium-12 cell">
         <div class="primary-title">
-          <h2  class="primary-title__h" class="">Цены на УЗИ</h2>
+          <h2  class="primary-title__h" class="">{{price-title}}</h2>
         </div>
       </div>
     </div>
     <div class="pricebox">
-      {{> simple-tabs}}
+      {{> gyno-price}}
     </div>
   </div>
 </section>

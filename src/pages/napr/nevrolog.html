@@ -1,0 +1,57 @@
+---
+layout: default
+title: Невролог — лечение инсультов, заболеваний позвоночника, невралгии
+page-title: Невролог
+price-title: Цены на услуги невролога
+---
+
+{{> flatnav-rvl}}
+<section class="breadcrumbs-area">
+  <div class="grid-container">
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li>
+          <span class="show-for-sr">Current: </span>{{page-title}}
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="large-6 medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{page-title}}</h2>
+        </div>
+        <p>Проводит лечение заболеваний центральной и периферической нервной системы: хроническая ишемия головного мозга, инсульт, вертебро-базилярная недостаточность, экстрапирамидные нарушения, головная боль, заболевания позвоночника и связанные с ними вертеброгенные болевые синдромы, черепно-мозговая травма, демиелинизирующие заболевания центральной нервной системы, мигрень, полинейропатии, поражения отдельных периферических нервов, неврозы.
+        </p>
+        {{> profits}}
+      </div>
+      <div class="large-6 cell">
+        {{> docform}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section price-area">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{price-title}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="pricebox">
+      {{> nevrolog-price}}
+    </div>
+  </div>
+</section>
+
+{{> map-n-contacts}}
+{{> flat-footer}}
