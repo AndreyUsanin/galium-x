@@ -1,0 +1,64 @@
+---
+layout: default
+title: Процедурный кабинет
+page-title: Процедурный кабинет
+price-title: Цены на услуги процедурного кабинета
+---
+
+{{> flatnav-rvl}}
+<section class="breadcrumbs-area">
+  <div class="grid-container">
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li>
+          <span class="show-for-sr">Current: </span>{{page-title}}
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+
+<section class="section procedur-area">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="large-6 medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{page-title}}</h2>
+        </div>
+        <p>Забор крови на исследования (биохимические, клинические, иммунологические, гормоны щитовидной железы, половые гормоны, RW, ВИЧ, гепатиты и др.)
+          <ul>
+            <li>Внутривенные инъекции</li>
+            <li>Внутривенно капельные вливания</li>
+            <li>Внутримышечные инъекции</li>
+            <li>Подкожные инъекции</li>
+          </ul>
+          Все перечисленные процедуры вы можете пройти у нас без предварительной записи.
+        </p>
+        {{> profits}}
+      </div>
+      <div class="large-6 cell">
+        <div class="pricebox">
+          {{> procedur-price}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section price-area">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{price-title}}</h2>
+        </div>
+      </div>
+    </div>
+
+  </div> -->
+</section>
+
+{{> map-n-contacts}}
+{{> flat-footer}}

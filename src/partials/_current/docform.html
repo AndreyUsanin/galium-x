@@ -57,6 +57,38 @@
         </select>
         {{/ifpage}}
 
+        {{#ifpage 'neuro-surgeon'}}
+        <select name="neuro-surgeon" id="docform__selector">
+          <option name="Яковлев" value="yakovlev">Яковлев</option>
+        </select>
+        {{/ifpage}}
+
+        {{#ifpage 'revmatolog'}}
+        <select name="revmatolog" id="docform__selector">
+          <option name="Хазов" value="hazov">Хазов</option>
+        </select>
+        {{/ifpage}}
+
+        {{#ifpage 'terapevt'}}
+        <select name="terapevt" id="docform__selector">
+          <option name="Гончарова" value="goncharova">Гончарова</option>
+        </select>
+        {{/ifpage}}
+
+        {{#ifpage 'endo'}}
+        <select name="endocrinolog" id="docform__selector">
+          <option name="Арсеньева" value="arseneva">Арсеньева</option>
+        </select>
+        {{/ifpage}}
+
+
+        {{#ifpage 'massage'}}
+        <select name="massage" id="docform__selector">
+          <option name="Степанян" value="stepanan">Степанян</option>
+          <option name="Клемина" value="klemina">Клемина</option>
+        </select>
+        {{/ifpage}}
+
       </label>
       <label for="">Ваше имя:
         <input id="main-name" name="Имя пациента" type="text" placeholder="Полное имя" required>

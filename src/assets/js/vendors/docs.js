@@ -22,6 +22,12 @@ var kaverina = ['Каверина Галина Николаевна' , 'http://l
 var dolgushin = ['Долгушин' , 'http://localhost:8000/assets/img/doctor__dolgushin.jpg' , 'Гирудотерапевт'];
 
 
+// массажитсы
+var stepanan = ['Степанян Людмила Геннадьевна' , 'http://localhost:8000/assets/img/massage__stepanan.jpg' , 'Медицинский массаж'];
+var klemina = ['Клемина Ольга Владимировна' , 'http://localhost:8000/assets/img/massage__stepanan.jpg' , 'Медицинский массаж'];
+
+
+
 var docName = document.createElement('h3');
 docName.className = 'docmodal__name';
 var docHiddenInput = document.createElement('input');
@@ -107,6 +113,12 @@ function docSwitcher(currentDoc){
             break;
         case "dolgushin":
             outputDoc(dolgushin);
+            break;
+        case "stepanan":
+            outputDoc(stepanan);
+            break;
+        case "klemina":
+            outputDoc(klemina);
             break;
         default:
             currentDoc = 0;

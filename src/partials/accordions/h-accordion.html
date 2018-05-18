@@ -1,28 +1,140 @@
 <ul class="h-accordion" data-accordion>
   <li class="h-accordion__item is-active" data-accordion-item>
-    <!-- Accordion tab title -->
-    <a href="#" class="h-accordion__title">Accordion 1</a>
-
-    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+    <a href="#" class="h-accordion__title">Общеклинические исследования крови</a>
     <div class="h-accordion__content accordion-content" data-tab-content>
-      <div class="grid-x">
-        <div class="medium-6 cell">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius neque modi saepe iste, impedit voluptatum debitis nihil quis nemo, laboriosam culpa aut itaque. Sed unde ea culpa eius ipsum quod.</p>
-        </div>
-        <div class="medium-6 cell">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius neque modi saepe iste, impedit voluptatum debitis nihil quis nemo, laboriosam culpa aut itaque. Sed unde ea culpa eius ipsum quod.</p>
-        </div>
-      </div>
+      {{> blood-test}}
     </div>
   </li>
   <li class="h-accordion__item" data-accordion-item>
-    <!-- Accordion tab title -->
-    <a href="#" class="h-accordion__title">Accordion 2</a>
-
-    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+    <a href="#" class="h-accordion__title">Иммуногематология</a>
     <div class="h-accordion__content accordion-content" data-tab-content>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptate suscipit obcaecati voluptatum asperiores maiores dolor nihil, alias excepturi laboriosam facere adipisci explicabo sapiente magnam repudiandae perspiciatis ex. Inventore, dolores.</p>
+      {{> immunogematology}}
     </div>
   </li>
-  <!-- ... -->
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Оценка свертывающей системы</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> coagulability-test}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Биохимические исследования</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> biochemical}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Оценка эндокринной системы</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> endo-test}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Регуляторные факторы и ферменты желудка</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> enzymes}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Лекарственный мониторинг</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> drug-test}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Исследования мочи</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> urine-test}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Исследования кала</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> kal-test}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Диагностика инфекционных заболеваний</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> infections}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">ПЦР - диагностика инфекционных заболеваний</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> pcr-test}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Тесты РПГА</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> rpga-test}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Гельминты</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> gelminti}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Макро- и микроэлементы </a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> micro-macro}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Иммунологические исследования</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> immuno-test}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Интерфероновый статус </a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> interferon}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Диагностика аутоиммунных заболеваний</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> auto-immuno}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Аллергологические исследования</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> alergy}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Цитологические исследования</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> cyto}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Гистологические исследования</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> gysto}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Микробиология</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> micro-bio}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Цитогенетические исследования</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> cyto-genetics}}
+    </div>
+  </li>
+  <li class="h-accordion__item" data-accordion-item>
+    <a href="#" class="h-accordion__title">Профили исследований</a>
+    <div class="h-accordion__content accordion-content" data-tab-content>
+      {{> profile-test}}
+    </div>
+  </li>
 </ul>

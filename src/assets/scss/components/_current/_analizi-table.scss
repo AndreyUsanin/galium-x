@@ -1,0 +1,13 @@
+.uzi-table {
+
+
+  &__inner-header {
+    color: $white;
+    background: $primary-color !important;
+  }
+
+  &__inner-subheader {
+    color: $white;
+    background: lighten($primary-color, 40%) !important;
+  }
+}

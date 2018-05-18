@@ -1,0 +1,58 @@
+---
+layout: default
+title: Ревматолог — лечение артрита, остеопороза, аутоиммунных заболеваний
+page-title: Ревматолог
+price-title: Цены на услуги ревматолога
+---
+
+{{> flatnav-rvl}}
+<section class="breadcrumbs-area">
+  <div class="grid-container">
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li>
+          <span class="show-for-sr">Current: </span>{{page-title}}
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="large-6 medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{page-title}}</h2>
+        </div>
+        <p>Проводит лечение дегенеративные заболеваний позвоночника (грыж межпозвонкового диска); Нарушения мозгового кровообращения, каверномы, аневризмы, мальформации;
+        Опухоли, онкология отделов спинного или головного мозга.
+        </p>
+        {{> profits}}
+      </div>
+      <div class="large-6 cell">
+        {{> docform}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section price-area">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="medium-12 cell">
+        <div class="primary-title">
+          <h2  class="primary-title__h" class="">{{price-title}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="pricebox">
+      {{> revmatolog-price}}
+    </div>
+  </div>
+</section>
+
+{{> map-n-contacts}}
+{{> flat-footer}}
