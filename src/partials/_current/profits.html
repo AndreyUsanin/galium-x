@@ -1,3 +1,4 @@
+{{#ifequal type 'generic'}}
 <div class="profit">
   <div class="profit__iconbox">
     <span class="profit__icon icon-list"></span>
@@ -25,3 +26,34 @@
     <p>Несмотря на использование передовой медтехники, мы стараемся держать цены на доступном для каждого пациента уровне.</p>
   </div>
 </div>
+{{/ifequal}}
+
+{{#ifequal type 'analizi'}}
+<div class="profit">
+  <div class="profit__iconbox">
+    <span class="profit__icon icon-list"></span>
+  </div>
+  <div class="profit__info">
+    <h3 class="profit__title">Без записи, без очередей</h3>
+    <p>Отсутствие очередей, прием по записи в удобное для вас время. Точность, надежность и приветливый персонал.</p>
+  </div>
+</div>
+<div class="profit">
+  <div class="profit__iconbox">
+    <span class="profit__icon icon-discount"></span>
+  </div>
+  <div class="profit__info">
+    <h3 class="profit__title">Получить результаты легко</h3>
+    <p>Вам даже не придётся ехать в офис, мы пришлём их на e-mail</p>
+  </div>
+</div>
+<div class="profit">
+  <div class="profit__iconbox">
+    <span class="profit__icon icon-expert-doc"></span>
+  </div>
+  <div class="profit__info">
+    <h3 class="profit__title">Гарантия низких цен</h3>
+    <p>Цены на анализы в «Галиуме» ниже, чем у основных конкурентов</p>
+  </div>
+</div>
+{{/ifequal}}

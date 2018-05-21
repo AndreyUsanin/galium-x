@@ -20,7 +20,7 @@ price-title: Цены на лабараторные анализы
 </section>
 
 <div class="grid-container">
-{{> blood-test}}
+
 
 </div>
 
@@ -29,22 +29,19 @@ price-title: Цены на лабараторные анализы
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="large-6 medium-12 cell">
-        <div class="primary-title">
-          <h2  class="primary-title__h" class="">{{page-title}}</h2>
+        <div class="napr-intro">
+          <img src="../assets/img/analizi-bkg.jpg" alt="">
+          <div class="napr-intro__caption">
+            <div class="primary-title">
+              <h2  class="primary-title__h" class="">{{page-title}}</h2>
+            </div>
+            <p>Забор крови на исследования (биохимические, клинические, иммунологические, гормоны щитовидной железы, половые гормоны, RW, ВИЧ, гепатиты и др.)
+            </p>
+          </div>
         </div>
-        <p>Забор крови на исследования (биохимические, клинические, иммунологические, гормоны щитовидной железы, половые гормоны, RW, ВИЧ, гепатиты и др.)
-          <ul>
-            <li>Внутривенные инъекции</li>
-            <li>Внутривенно капельные вливания</li>
-            <li>Внутримышечные инъекции</li>
-            <li>Подкожные инъекции</li>
-          </ul>
-          Все перечисленные процедуры вы можете пройти у нас без предварительной записи.
-        </p>
-        {{> profits}}
       </div>
       <div class="large-6 cell">
-          {{> docform}}
+        {{> profits type='analizi'}}        
       </div>
     </div>
   </div>
@@ -57,7 +54,7 @@ price-title: Цены на лабараторные анализы
         <div class="primary-title">
           <h2  class="primary-title__h" class="">{{price-title}}</h2>
         </div>
-        <div class="pricebox">
+        <div class="">
           {{> h-accordion}}
         </div>
       </div>
