@@ -2,14 +2,15 @@
 
   display: flex;
   margin-top: 2em;
+  font-size: .9em;
 
-&__info {
-  padding-left: 2em;
-}
+  &__info {
+    padding-left: 2em;
+  }
 
-&__title {
-  font-size: 1.5em;
-}
+  &__title {
+    font-size: 1.5em;
+  }
 
   &__iconbox {
     margin-bottom: 2em;
@@ -25,7 +26,7 @@
       position: relative;
     }
 
-    &::after {
+    &:after {
       content: '';
       position: absolute;
       display: block;
@@ -38,6 +39,20 @@
       border-radius: 50%;
       z-index: 1;
     }
-  }
 
+    &--napr {
+      font-size: 3rem;
+
+      &:after {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+  }
+}
+
+
+.profit-area {
+  padding: 2em;
 }

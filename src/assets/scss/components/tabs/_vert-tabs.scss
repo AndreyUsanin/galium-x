@@ -33,13 +33,13 @@
     }
 
     &:hover {
-      background: $black;
+      background: $dark-gray;
       transition: all .3s;
     }
   }
 
   &__item.is-active {
-    background: $black;
+    background: $dark-gray;
     transition: all .3s;
 
     .vert-tabs__link {
@@ -54,7 +54,7 @@
 
   &__link {
     color: $black;
-    font-weight: bold;
+    font-size: .9em;
     text-transform: uppercase;
     padding-left: 1em;
 

@@ -5,6 +5,10 @@
   align-items: flex-start;
   position: relative;
 
+  &--napr {
+    margin-bottom: 2em;
+  }
+
   &__h {
     font-weight: bold;
     font-size: 3em;

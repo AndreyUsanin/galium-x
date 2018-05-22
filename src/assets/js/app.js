@@ -377,10 +377,20 @@ particlesJS("particles-js", {
 if ($(".vert-tabs")[0]){
 	var target = document.getElementById("vert-tabs");
 	var options = {
-	  "linkClass": "vert-tabs__item"
+	  "linkClass": "vert-tabs__item",
 	};
 
 	var elem = new Foundation.Tabs($(target), options);
+}
+// ACC-TABS
+
+if ($("#acc-tabs")[0]){
+	var target = document.getElementById("acc-tabs");
+	var options = {
+	  // 'linkClass': 'acc-tabs__item',
+	};
+
+	var elem = new Foundation.ResponsiveAccordionTabs($(target), options);
 }
 
 // H-TABS

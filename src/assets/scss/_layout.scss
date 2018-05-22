@@ -317,12 +317,120 @@ body {
 // napr intro
 
 .napr-intro {
-  // background: url('../img/analizi-bkg.jpg')  no-repeat top center;
-  position: relative;
 
-  &__caption {
-    position: absolute;
-    top: 0;
-    left: 0;
+  &__title {
+    font-weight: bold;
   }
+
+    background: url('../img/analizi-bkg.jpg')  no-repeat top center;
+    position: relative;
+    color: $white;
+    z-index: 1;
+    padding: 3em;
+
+    &::after {
+        background-image: linear-gradient(to bottom, $primary-color, $black);
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+  }
+
+
+}
+
+
+// working-hours
+
+.working-hours {
+  margin-top: 2em;
+  padding-top: 2em;
+  // border-top: 1px solid lighten($primary-color, 60%);
+
+  &__inner {
+    display: flex;
+  }
+
+  &__schedule {
+    width: 100%;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: .8em 0;
+    border-bottom: 1px dotted lighten($primary-color, 60%);
+  }
+
+  &__time {
+
+  }
+
+  &__icon {
+    font-size: 3em;
+    margin-right: .5em;
+    color: lighten($primary-color, 60%);
+  }
+}
+
+// acc-tabs
+
+.acc-tabs__title {
+
+  font-weight: bold;
+  font-size: 1.2em;
+
+  @include breakpoint(medium down) {
+    display: none;
+  }
+}
+
+#acc-tabs {
+
+
+
+  .tabs-title {
+
+    background: $light-gray;
+    border-bottom: 1px dotted $dark-gray;
+
+    &.is-active > a {
+      background: $white;
+      font-weight: bold;
+    }
+
+    & > a {
+      font-size: 1em;
+      padding: 1em;
+
+      &::before {
+        font-family: 'icomoon';
+        content: "\e90a";
+        color: $dark-gray;
+        padding-right: .7em;
+        font-size: .7em;
+      }
+    }
+  }
+
+  .accordion-item > a {
+    font-size: .9em;
+  }
+}
+
+.tabs-content {
+  background: $white !important;
 }

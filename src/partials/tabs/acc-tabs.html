@@ -1,0 +1,125 @@
+<div class="grid-x">
+  <div class="large-4 cell">
+    <ul class="acc-tabs vertical" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="acc-tabs">
+      <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Общеклинические исследования крови</a></li>
+      <li class="tabs-title"><a href="#panel2">Иммуногематология</a></li>
+      <li class="tabs-title"><a href="#panel3">Оценка свертывающей системы</a></li>
+      <li class="tabs-title"><a href="#panel4">Биохимические исследования</a></li>
+      <li class="tabs-title"><a href="#panel5">Оценка эндокринной системы</a></li>
+      <li class="tabs-title"><a href="#panel6">Регуляторные факторы и ферменты желудка</a></li>
+      <li class="tabs-title"><a href="#panel7">Лекарственный мониторинг</a></li>
+      <li class="tabs-title"><a href="#panel8">Исследования мочи</a></li>
+      <li class="tabs-title"><a href="#panel9">Исследования кала</a></li>
+      <li class="tabs-title"><a href="#panel10">Диагностика инфекционных заболеваний</a></li>
+      <li class="tabs-title"><a href="#panel11">ПЦР - диагностика инфекционных заболеваний</a></li>
+      <li class="tabs-title"><a href="#panel12">Тесты РПГА</a></li>
+      <li class="tabs-title"><a href="#panel13">Гельминты</a></li>
+      <li class="tabs-title"><a href="#panel14">Макро- и микроэлементы</a></li>
+      <li class="tabs-title"><a href="#panel15">Иммунологические исследования</a></li>
+      <li class="tabs-title"><a href="#panel16">Интерфероновый статус</a></li>
+      <li class="tabs-title"><a href="#panel17">Диагностика аутоиммунных заболеваний</a></li>
+      <li class="tabs-title"><a href="#panel18">Аллергологические исследования</a></li>
+      <li class="tabs-title"><a href="#panel19">Цитологические исследования</a></li>
+      <li class="tabs-title"><a href="#panel20">Гистологические исследования</a></li>
+      <li class="tabs-title"><a href="#panel21">Микробиология</a></li>
+      <li class="tabs-title"><a href="#panel22">Цитогенетические исследования</a></li>
+      <li class="tabs-title"><a href="#panel23">Профили исследований</a></li>
+    </ul>
+  </div>
+  <div class="large-8 cell">
+    <div class="tabs-content" data-tabs-content="acc-tabs">
+      <div class="tabs-panel is-active" id="panel1">
+        <h3 class="acc-tabs__title">Общеклинические исследования крови</h3>
+        {{> blood-test}}
+      </div>
+      <div class="tabs-panel" id="panel2">
+        <h3 class="acc-tabs__title">Иммуногематология</h3>
+        {{> immunogematology}}
+      </div>
+      <div class="tabs-panel" id="panel3">
+        <h3 class="acc-tabs__title">Оценка свертывающей системы</h3>
+        {{> coagulability-test}}
+      </div>
+      <div class="tabs-panel" id="panel4">
+        <h3 class="acc-tabs__title">Биохимические исследования</h3>
+        {{> biochemical}}
+      </div>
+      <div class="tabs-panel" id="panel5">
+        <h3 class="acc-tabs__title">Оценка эндокринной системы</h3>
+        {{> endo-test}}
+      </div>
+      <div class="tabs-panel" id="panel6">
+        <h3 class="acc-tabs__title">Регуляторные факторы и ферменты желудка</h3>
+        {{> enzymes}}
+      </div>
+      <div class="tabs-panel" id="panel7">
+        <h3 class="acc-tabs__title">Лекарственный мониторинг</h3>
+        {{> drug-test}}
+      </div>
+      <div class="tabs-panel" id="panel8">
+        <h3 class="acc-tabs__title">Исследования мочи</h3>
+        {{> urine-test}}
+      </div>
+      <div class="tabs-panel" id="panel9">
+        <h3 class="acc-tabs__title">Исследования кала</h3>
+        {{> kal-test}}
+      </div>
+      <div class="tabs-panel" id="panel10">
+        <h3 class="acc-tabs__title">Диагностика инфекционных заболеваний</h3>
+        {{> infections}}
+      </div>
+      <div class="tabs-panel" id="panel11">
+        <h3 class="acc-tabs__title">ПЦР - диагностика инфекционных заболеваний</h3>
+        {{> pcr-test}}
+      </div>
+      <div class="tabs-panel" id="panel12">
+        <h3 class="acc-tabs__title">Тесты РПГА</h3>
+        {{> rpga-test}}
+      </div>
+      <div class="tabs-panel" id="panel13">
+        <h3 class="acc-tabs__title">Гельминты</h3>
+        {{> gelminti}}
+      </div>
+      <div class="tabs-panel" id="panel14">
+        <h3 class="acc-tabs__title">Макро- и микроэлементы </h3>
+        {{> micro-macro}}
+      </div>
+      <div class="tabs-panel" id="panel15">
+        <h3 class="acc-tabs__title">Иммунологические исследования</h3>
+        {{> immuno-test}}
+      </div>
+      <div class="tabs-panel" id="panel16">
+        <h3 class="acc-tabs__title">Интерфероновый статус</h3>
+        {{> interferon}}
+      </div>
+      <div class="tabs-panel" id="panel17">
+        <h3 class="acc-tabs__title">Диагностика аутоиммунных заболеваний</h3>
+        {{> auto-immuno}}
+      </div>
+      <div class="tabs-panel" id="panel18">
+        <h3 class="acc-tabs__title">Аллергологические исследования</h3>
+        {{> alergy}}
+      </div>
+      <div class="tabs-panel" id="panel19">
+        <h3 class="acc-tabs__title">Цитологические исследования</h3>
+        {{> cyto}}
+      </div>
+      <div class="tabs-panel" id="panel20">
+        <h3 class="acc-tabs__title">Гистологические исследования</h3>
+        {{> gysto}}
+      </div>
+      <div class="tabs-panel" id="panel21">
+        <h3 class="acc-tabs__title">Микробиология</h3>
+        {{> micro-bio}}
+      </div>
+      <div class="tabs-panel" id="panel22">
+        <h3 class="acc-tabs__title">Цитогенетические исследования</h3>
+        {{> cyto-genetics}}
+      </div>
+      <div class="tabs-panel" id="panel23">
+        <h3 class="acc-tabs__title">Профили исследований</h3>
+        {{> profile-test}}
+      </div>
+    </div>
+  </div>
+</div>

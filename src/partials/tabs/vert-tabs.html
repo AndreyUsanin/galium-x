@@ -5,11 +5,11 @@
         <ul class="vert-tabs vertical" data-tabs id="vert-tabs">
           <li class="vert-tabs__item is-active">
             <span class="vert-tabs__icon icon-cog2"></span>
-            <a href="#vert-tabs__1" class="vert-tabs__link" aria-selected="true">Lorem ipsum</a>
+            <a href="#vert-tabs__1" class="vert-tabs__link" aria-selected="true">Общеклинические исследования крови</a>
           </li>
           <li class="vert-tabs__item">
             <span class="vert-tabs__icon icon-eye2"></span>
-            <a href="#vert-tabs__2" class="vert-tabs__link">Dolor sit amet</a>
+            <a href="#vert-tabs__2" class="vert-tabs__link">Иммуногематология</a>
           </li>
           <li class="vert-tabs__item"  class="vert-tabs__link">
             <span class="vert-tabs__icon icon-chart2"></span>
@@ -28,12 +28,12 @@
       <div class="large-8 medium-12 cell">
         <div class="vert-tabs__content" data-tabs-content="vert-tabs">
           <div class="tabs-panel is-active" id="vert-tabs__1">
-            <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum laborum molestias asperiores saepe explicabo corporis impedit, reiciendis adipisci facilis, sit.</p>
+            <h3>Общеклинические исследования крови</h3>
+            {{> blood-test}}
           </div>
           <div class="tabs-panel" id="vert-tabs__2">
-            <h2>Dolor sit amet, consectetur</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum laborum molestias asperiores saepe explicabo corporis impedit, reiciendis adipisci facilis, sit.</p>
+            <h3>Иммуногематология</h3>
+            {{> immunogematology}}
           </div>
           <div class="tabs-panel" id="vert-tabs__3">
             <h2>Voluptatum laborum molestias</h2>
