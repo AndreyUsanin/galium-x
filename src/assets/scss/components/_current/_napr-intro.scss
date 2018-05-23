@@ -1,0 +1,99 @@
+// napr intro
+
+.napr-intro {
+
+  &--analizi {
+    background: url('../img/analizi-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--gastro {
+    background: url('../img/gastro-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--girudo {
+    background: url('../img/girudo-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--cardio {
+    background: url('../img/cardio-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--func {
+    background: url('../img/cardio-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--nevrolog {
+    background: url('../img/nevrolog-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--neuro-surgeon {
+    background: url('../img/neuro-surgeon-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--revmatolog {
+    background: url('../img/revmatolog-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--endo {
+    background: url('../img/endoi-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--procedur {
+    background: url('../img/procedur-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--terapevt {
+    background: url('../img/terapevt-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--massage {
+    background: url('../img/massage-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--uzi {
+    background: url('../img/uzi-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &--gyno {
+    background: url('../img/gyno-bkg.jpg')  no-repeat top center;
+    background-size: cover;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+
+    position: relative;
+    color: $white;
+    z-index: 1;
+    padding: 3em;
+
+    &::after {
+        background-image: linear-gradient(to bottom, $primary-color, $black);
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.85;
+  }
+
+
+}

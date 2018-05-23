@@ -22,15 +22,9 @@ price-title: Цены на услуги ревматолога
 
 <section class="section">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x">
+    <div class="grid-x grid-margin-x" data-equalizer>
       <div class="large-6 medium-12 cell">
-        <div class="primary-title">
-          <h2  class="primary-title__h" class="">{{page-title}}</h2>
-        </div>
-        <p>Проводит лечение дегенеративные заболеваний позвоночника (грыж межпозвонкового диска); Нарушения мозгового кровообращения, каверномы, аневризмы, мальформации;
-        Опухоли, онкология отделов спинного или головного мозга.
-        </p>
-        {{> profits type='generic'}}
+        {{> napr-intro}}
       </div>
       <div class="large-6 cell">
         {{> docform}}

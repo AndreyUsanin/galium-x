@@ -27,21 +27,14 @@ price-title: Цены на лабараторные анализы
 
 <section class="section">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x">
+    <div class="grid-x grid-margin-x align-middle align-center">
       <div class="large-6 medium-12 cell">
-        <div class="napr-intro">
-          <img src="../assets/img/analizi-bkg.jpg" alt="">
-          <div class="napr-intro__caption">
-            <div class="primary-title">
-              <h2  class="primary-title__h" class="">{{page-title}}</h2>
-            </div>
-            <p>Забор крови на исследования (биохимические, клинические, иммунологические, гормоны щитовидной железы, половые гормоны, RW, ВИЧ, гепатиты и др.)
-            </p>
-          </div>
-        </div>
+        {{> napr-intro}}
       </div>
       <div class="large-6 cell">
-        {{> profits type='analizi'}}        
+        <div class="profit-area">
+          {{> profits type='analizi'}}
+        </div>
       </div>
     </div>
   </div>
@@ -51,11 +44,11 @@ price-title: Цены на лабараторные анализы
   <div class="grid-container">
     <div class="grid-x">
       <div class="medium-12 cell">
-        <div class="primary-title">
+        <div class="primary-title primary-title--napr">
           <h2  class="primary-title__h" class="">{{price-title}}</h2>
         </div>
         <div class="">
-          {{> h-accordion}}
+          {{> acc-tabs}}
         </div>
       </div>
     </div>

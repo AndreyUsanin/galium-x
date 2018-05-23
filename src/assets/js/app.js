@@ -93,6 +93,7 @@ $(document).ready(function() {
     info: false,
     ordering: false,
     autoWidth: false,
+    "lengthMenu": [[15, 30, 60, -1], [15, 30, 60, "All"]],
     "language": {
       "processing": "Подождите...",
       "search": "Поиск по прайсу:",
@@ -124,13 +125,38 @@ $(document).ready(function(){
 //let's create arrays
 var uzi = [
     {display: "Белоусова", value: "Белоусова" },
-    {display: "Каверина", value: "Каверина" }];
+    {display: "Каверина", value: "Каверина" },
+    {display: "Козлова", value: "Козлова" }];
+
+var ginecolog = [
+    {display: "Захарова", value: "Захарова" },
+    {display: "Мохова", value: "Мохова" }];
+
+var gastroenterolog = [
+    {display: "Золотова", value: "Золотова" }];
+
+var girudoterapevt = [
+    {display: "Долгушин", value: "Долгушин" }];
 
 var cardiolog = [
-    {display: "Темарцев", value: "Темарцев" },
     {display: "Растрыгина", value: "Растрыгина" }];
 
+var funcDiagnost = [
+    {display: "Темарцев", value: "Темарцев" }];
+
+var nevrolog = [
+    {display: "Мацкевич", value: "Мацкевич" }];
+
+var neurohirurg = [
+    {display: "Яковлев", value: "Яковлев" }];
+
+var revmatolog = [
+    {display: "Хазов", value: "Хазов" }];
+
 var terapevt = [
+    {display: "Гончарова", value: "Гончарова" }];
+
+var endocrinolog = [
     {display: "Арсеньева", value: "Арсеньева" }];
 
 //If parent option is changed
@@ -141,11 +167,35 @@ $("#parent_selection").change(function() {
               case 'uzi':
                 list(uzi);
                 break;
+              case 'gastroenterolog':
+                list(gastroenterolog);
+                break;
+              case 'ginecolog':
+                list(ginecolog);
+                break;
+              case 'girudoterapevt':
+                list(girudoterapevt);
+                break;
               case 'cardiolog':
                 list(cardiolog);
                 break;
+              case 'func-diagnost':
+                list(funcDiagnost);
+                break;
+              case 'nevrolog':
+                list(nevrolog);
+                break;
+              case 'neurohirurg':
+                list(neurohirurg);
+                break;
+              case 'revmatolog':
+                list(revmatolog);
+                break;
               case 'terapevt':
                 list(terapevt);
+                break;
+              case 'endocrinolog':
+                list(endocrinolog);
                 break;
             default: //default child option is blank
                 $("#child_selection").html('');
